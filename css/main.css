@@ -96,5 +96,64 @@ html{
     font-size: 1.2rem;
     font-weight: 400;
     color: var(--textblack);
+}
 
+.saving{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--backgroundblack);
+}
+
+.saving .saving__title{
+    font-size: 2.4rem;
+    color: var(--textwhite);
+    line-height: 27px;
+    font-weight: 500;
+    margin: 16px 0 24px 0;
+    text-align: center;
+}
+
+
+
+.saving .saving__card{
+    padding: 18px;
+    background-color: var(--backgroundcard);
+    width: 236px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+}
+
+.saving .saving__card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.saving .saving__card p:nth-child(2){
+    font-size: 1.8rem;
+    color: var(--textwhite);
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.saving .saving__card p:nth-child(3){
+    font-size: 1.2rem;
+    color: var(--textwhite);
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.saving .saving__card a:nth-child(4){
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--textwhite);
+    text-decoration: none;
+
+}
+
+.saving .saving__card a:nth-child(4):hover{
+    color: var(--backgroundgorange);
 }
