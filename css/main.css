@@ -157,3 +157,117 @@ html{
 .saving .saving__card a:nth-child(4):hover{
     color: var(--backgroundgorange);
 }
+
+.love{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--backgroundwhite);
+    
+}
+
+.love .love__title{
+    margin: 16px 0 20px 0;
+    width: 90%;
+    text-align: start;
+    font-size: 2.8rem;
+    line-height: 30px;
+    color: var(--textblack);
+    font-weight: 700;
+}
+
+.love .love__description{
+    width: 90%;
+    font-size: 1.6rem;
+    color: var(--textblack);
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.love .love__img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+}
+
+.learn{
+    width: 100%;
+    background-color: var(--backgroundblack);
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.learn h2{
+    margin: 16px 0 24px 0;
+    text-align: center;
+    font-size: 2.8rem;
+    line-height: 28px;
+    color: var(--textwhite);
+    font-weight: 700;
+}
+
+.learn .learn__description{
+    font-size: 1.4rem;
+    color: var(--textwhite);
+    font-weight: thin;
+    line-height: 17px;
+    text-align: start;
+    margin-bottom: 16px;
+
+}
+.learn .learn__choose{
+    font-size: 1.4rem;
+    color: var(--textwhite); 
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.learn__card{
+    width: 236px;
+    background-color: var(--backgroundcard);
+    padding: 18px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    
+}
+
+.learn__card img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.learn__card h3{
+    text-align: start;
+    font-size: 1.8rem;
+    color: var(--textwhite);
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.learn__card  p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--textwhite);
+    text-align: start;
+    
+}
+
+.learn .learn__button{
+    width: 150px;
+    height: 37px;
+    padding: 10px;
+    background-color: var(--backgroundcard);
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--backgroundgorange);
+    margin-bottom: 24px;
+    border-radius: 8px;
+}
+
