@@ -194,80 +194,141 @@ html{
 
 .learn{
     width: 100%;
-    background-color: var(--backgroundblack);
-    padding: 0 20px 0 20px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.learn h2{
-    margin: 16px 0 24px 0;
-    text-align: center;
-    font-size: 2.8rem;
-    line-height: 28px;
-    color: var(--textwhite);
-    font-weight: 700;
+.learn__text{
+    width: 80%;
+    margin-top: 20px;
 }
 
-.learn .learn__description{
-    font-size: 1.4rem;
-    color: var(--textwhite);
+.learn__text h2{
+    font-size: 1.8rem;
+    padding-bottom: 12px;
+    font-weight: bold;
+    color: var(--textblack);
+
+}
+
+.learn__text p:nth-child(2){
+    font-size: 1.2rem;
+    padding-bottom: 8px;
     font-weight: thin;
-    line-height: 17px;
-    text-align: start;
-    margin-bottom: 16px;
+    color: var(--textblack);
+    
+}
 
+.learn__text p:nth-child(3){
+    font-size: 1.2rem;
+    padding-bottom: 12px;
+    font-weight: bold;
+    color: var(--textblack);  
 }
-.learn .learn__choose{
-    font-size: 1.4rem;
-    color: var(--textwhite); 
-    margin-bottom: 24px;
-    font-weight: 500;
-}
+
 
 .learn__card{
-    width: 236px;
-    background-color: var(--backgroundcard);
-    padding: 18px;
-    margin-bottom: 12px;
-    border-radius: 8px;
+    width: 90%;
+    height: 338px;
+    border-radius: 8px;  
+    margin: 0 auto;
+    position: relative;
     
 }
 
-.learn__card img{
-    width: 200px;
+.learn__card--container{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;  
+}
+
+.learn__card--item{
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 12px;
+    padding: 12px 17px;
+    display: flex;
+    flex-direction: column;
+   
+    background-color: var(--backgroundblack);
+    position: absolute;
+    left: 12px;
+    transition: opacity 0.5s ease-in-out;
+    visibility: none;
+    opacity: 0;
+    height: 310px;
+}
+
+.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.learn__card--item img{
+    width: 100%;
     height: 200px;
-    margin-bottom: 20px;
+    object-fit: cover;
     border-radius: 8px;
 }
 
-.learn__card h3{
-    text-align: start;
+.learn__card--item h3{
     font-size: 1.8rem;
+    font-weight: bold;
     color: var(--textwhite);
-    font-weight: 700;
-    margin-bottom: 4px;
+    padding-bottom: 12px;
+    padding-top: 8px;
 }
 
-.learn__card  p{
+.learn__card--item p{
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: thin;
     color: var(--textwhite);
-    text-align: start;
-    
 }
 
-.learn .learn__button{
-    width: 150px;
-    height: 37px;
-    padding: 10px;
-    background-color: var(--backgroundcard);
-    border: none;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--backgroundgorange);
-    margin-bottom: 24px;
-    border-radius: 8px;
+.learn__arrows{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    top: 42%;
+    justify-content: space-between;
 }
+
+.learn__arrows a{
+    text-decoration: none;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--textblack);
+}
+
+.learn__button{
+    margin-bottom: 30px;
+}
+
+.learn__button button{
+    width: 100px;
+    height: 27px;
+    border-radius: 4px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 4px;
+    color: var(--textwhite);
+    border: 1px solid rgb(189, 189, 189);
+    background-color: rgb(43, 42, 42);
+    cursor: pointer;
+}
+
+.learn__button button:hover{
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+
+
+
+
 
