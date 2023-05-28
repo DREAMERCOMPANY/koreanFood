@@ -14,4 +14,70 @@ html{
     --backgroundButtons: #FE903F;
     --orangeTitle: #EA6300;
     --backgroundCards: #2C2E30;
+    --textWhite: #EFF1E5;
+    --textBlack: #292828;
+}
+
+header{
+    width: 100%;
+    background-color: var(--backgroundBlack);
+}
+
+.nav{
+    width: 85%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 1rem 0;
+    
+}   
+
+.nav__brand p{
+    color: var(--orangeTitle);
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+.nav__brand span{
+    color: var(--textWhite);
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.nav__menu{
+    display: flex;
+}
+
+.nav__menu .nav__menu--items{
+    list-style: none;
+    color: var(--textWhite);
+    display: flex;
+    align-items: center;
+}
+
+.nav__menu .nav__menu--items li{
+    font-size: 1.5rem;
+    padding-right: 3.4rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.nav__menu .nav__menu--items li:hover{
+    color: var(--backgroundButtons);
+    letter-spacing: 0.1rem;
+}
+
+.nav__menu .nav__menu--button{
+    width: auto;
+    background-color: var(--backgroundButtons);
+    border: none;
+    padding: 10px 30px;
+    color: var(--textWhite);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 400;
+    
 }
