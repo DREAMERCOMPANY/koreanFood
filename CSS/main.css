@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --backgroundBlack: #202223;
+    --backgroundButtons: #FE903F;
+    --orangeTitle: #EA6300;
+    --backgroundCards: #2C2E30;
+}
