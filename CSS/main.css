@@ -79,5 +79,97 @@ header{
     border-radius: 4px;
     cursor: pointer;
     font-weight: 400;
+}
+
+.hero__container{
+    width: 100%;
+    background-color: var(--backgroundBlack);
+    letter-spacing: 2px;
     
 }
+
+.hero__container--content{
+    width: 80%;
+    margin: 0 auto;
+     display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(3,1fr); 
+}
+
+.hero__love{
+    grid-column: 2 / 4;
+    display: flex; 
+    
+} 
+
+.hero__love--arrow{
+    display: inline-block;
+    background-image: url('../Assets/img/arrowUp.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 12px;
+    height: 90%;
+    align-self: center;
+}
+
+
+
+.hero__love--text p:nth-child(1){
+    color: var(--textWhite);
+    font-size: 1rem;
+    
+    
+} 
+
+
+.hero__love--text p:nth-child(2){
+    color: var(--backgroundButtons);
+    font-size: 1rem;
+    
+    
+} 
+
+.hero__love--text p:nth-child(3){
+    color: var(--textWhite);
+    font-size: 1rem;
+    
+    
+} 
+
+
+
+.hero__recipies{
+    grid-column: 6 / 7;
+    
+
+}
+
+.hero__title{
+    grid-row: 2 / 3;
+    grid-column: 3 / 6;
+    
+
+}
+
+.hero__line--left{
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+    
+
+}
+
+.hero__button{
+    grid-row: 3 / 4;
+    grid-column: 4 / 5;
+    
+
+}
+
+.hero__line--right{
+    grid-row: 3 / 4;
+    grid-column: 5 / 7;
+    
+
+} 
+
