@@ -220,7 +220,7 @@ header{
     grid-template-columns: 2fr 1fr;
     justify-items: center;
     align-items: center;
-    padding: 2.2rem 0 6rem 0;
+    padding: 2.2rem 0 5.4rem 0;
     row-gap: 36px;
 
 }
@@ -330,7 +330,7 @@ header{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
     margin: 0 auto;
-    padding-bottom: 5.6rem;
+    padding-bottom: 2.2rem;
     row-gap: 3rem;
     row-gap: 2.6rem;    
     justify-items: center ;
@@ -368,22 +368,64 @@ header{
    border-radius: 8px;
 }
 
+
 .bronze__hero p:nth-child(1){
     font-size: 1.6rem;
     font-weight: 700;
-    padding-bottom: 2rem;
+   
 }
 
 .bronze__hero p:nth-child(2){
     font-size: 5.4rem;
     font-weight: 700;
-    line-height: 50px;
-    
+    padding-top: 1.5rem;
+   
 }
 
-.bronze__hero p:nth-child(3){
-    font-size: 1.2rem;
+.price{
+    color: var(--textBlack);
+    padding-top: 1.5rem;
+
+}
+
+.price span:nth-child(1),.price span:nth-child(3){
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.price span:nth-child(1){
+    position: relative;
+    bottom: 8px;
+}
+
+.price span:nth-child(3){
+    position: relative;
+    bottom: 26px;
+}
+
+.price span:nth-child(2){
+    font-size: 5.4rem;
+    font-weight: 700;
+}
+
+
+.price span:nth-child(4){
+    font-size: 3rem;
     font-weight: 300;  
+}
+
+.price span:nth-child(5){
+    font-size: 1.2rem;
+    font-weight: 300;
+    position: relative;
+    bottom: 4px;  
+}
+
+.bronze__hero p:last-child{
+    font-size: 1.2rem;
+    font-weight: 300;
+    
+    
 }
 
 .bronze__plans{
@@ -427,6 +469,7 @@ header{
     color: var(--textBlack);
     font-weight: 600;
     align-self: center;
+    cursor: pointer;
 }
 
 
