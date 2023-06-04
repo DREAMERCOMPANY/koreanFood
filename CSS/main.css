@@ -38,6 +38,20 @@ html{
     padding-left: 16px;
 }
 
+.arrow__text--first, .arrow__text--third{
+    font-size: 1rem;
+    letter-spacing: 0.3rem;  
+}
+
+.arrow__text--second{
+    color: var(--orangeTitle);
+    font-size: 1rem;
+    letter-spacing: 0.3rem; 
+}
+
+.white{
+    color: var(--textWhite);
+}
 header{
     width: 100%;
     background-color: var(--backgroundBlack);
@@ -125,31 +139,8 @@ header{
     grid-column: 2 / 3;
     display: flex; 
     align-items: center; 
-    justify-content: center;
-    
-    
+    justify-content: center;    
 }
-
-
-
-.hero__love--text p:nth-child(1), .hero__recipies--text p:nth-child(1){
-    color: var(--textWhite);
-    font-size: 1rem;
-    letter-spacing: 0.3rem;    
-} 
-
-
-.hero__love--text p:nth-child(2), .hero__recipies--text p:nth-child(2){
-    color: var(--backgroundButtons);
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem;
-} 
-
-.hero__love--text p:nth-child(3), .hero__recipies--text p:nth-child(3){
-    color: var(--textWhite);
-    font-size: 1rem;
-    letter-spacing: 0.3rem;  
-} 
 
 .hero__recipies{
     grid-column: 6 / 7;
@@ -266,20 +257,6 @@ header{
 
 
 
-
-
-.health__hamburguer--saving p:nth-child(1),.health__hamburguer--saving p:nth-child(3) {
-    color: var(--textBlack);
-    font-size: 1rem;
-    letter-spacing: 0.3rem;  
-}
-
-.health__hamburguer--saving p:nth-child(2){
-    color: var(--orangeTitle);
-    font-size: 1rem;
-    letter-spacing: 0.3rem; 
-}
-
 .up{
     rotate: 180deg;
 }
@@ -310,18 +287,7 @@ header{
    
 }
 
-.health__free--text p:first-child, .health__free--text p:last-child {
-    color: var(--textBlack);
-    font-size: 1rem;
-    letter-spacing: 0.3rem;
 
-}
-
-.health__free--text p:nth-child(2){
-    color: var(--orangeTitle);
-    font-size: 1rem;
-    letter-spacing: 0.3rem;
-}
 
 .plans__container{
     width: 80%;
@@ -471,6 +437,67 @@ header{
     align-self: center;
     cursor: pointer;
 }
+
+.love__container{
+    width: 100%;
+    background-color: var(--backgroundBlack);
+    padding: 2.2rem 0;
+}
+
+.love__hero{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    row-gap: 3.6rem;
+    align-items: center;
+    margin-bottom: 5.4rem;
+}
+
+.love__hero-topleft{
+    color: var(--textWhite);
+}
+
+.love__hero-topleft p:nth-child(1){
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 0.8rem;
+}
+
+.love__hero-topleft p:nth-child(2){
+    font-size: 2.5rem;
+    letter-spacing: 0.8rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    padding-bottom: 2rem;
+    
+}
+
+.love__hero-topleft p:nth-child(3),.love__hero-bottomleft p:last-child {
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 65%;
+}
+
+.love__hero-topright{
+    display: flex;
+    justify-content: end;
+}
+
+.love__hero-bottomleft{
+    color: var(--textWhite);
+}
+
+.love__hero-bottomleft p:first-child{
+    font-size: 5rem;
+}
+
+.love__hero-bottomright{
+    justify-self: end;
+}
+
+
+
 
 
 
