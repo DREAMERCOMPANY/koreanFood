@@ -496,6 +496,52 @@ header{
     justify-self: end;
 }
 
+.love__values{
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap: 12px;
+}
+
+.love__values--card{
+    border-radius: 8px;
+    background-color: var(--backgroundCards);
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.love__values--card p:nth-child(1){
+    font-size: 1.1rem;
+    color: var(--orangeTitle);
+    font-weight: 300;
+
+}
+
+.love__values--card p:nth-child(2){
+    color: var(--textWhite);
+    font-weight: 800;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    
+}
+
+.love__values--card p:nth-child(3){
+    font-size: 1.6rem;
+    color: var(--textWhite);
+    font-weight: 300;
+    margin-bottom: 2.4rem;
+    
+}
+
+.love__values--card a:nth-child(4){
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--orangeTitle);
+    align-self: center;   
+}
+
 
 
 
