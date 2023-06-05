@@ -113,7 +113,7 @@ header{
     color: var(--textWhite);
     border-radius: 4px;
     cursor: pointer;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .hero__container{
@@ -467,7 +467,7 @@ header{
 .love__hero-topleft p:nth-child(2){
     font-size: 2.5rem;
     letter-spacing: 0.8rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 2.2rem;
     padding-bottom: 2rem;
     
@@ -537,10 +537,94 @@ header{
 
 .love__values--card a:nth-child(4){
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--orangeTitle);
     align-self: center;   
 }
+
+.recipes__container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 2.2rem 0;
+}
+
+.recipes__hero{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    row-gap: 3.6rem;
+    align-items: center;
+    margin-bottom: 5.4rem;
+}
+
+.recipes__hero--topleft{
+    color: var(--textBlack);
+}
+
+.recipes__hero--topleft p:nth-child(1),.recipes__hero--topleft p:nth-child(2){
+    letter-spacing: 0.8rem;
+    font-weight: 400;
+}
+
+.recipes__hero--topleft p:nth-child(1){
+    font-size: 5rem;
+}
+
+.recipes__hero--topleft p:nth-child(2){
+    font-size: 2.5rem;
+    line-height: 2.2rem;
+    padding-bottom: 2rem;
+}
+
+.recipes__hero--topleft p:nth-child(3){
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 65%;
+}
+
+.recipes__hero--topright {
+    width: 100%;
+    height: 100%;
+    background: url('../Assets/img/chefcito.png') no-repeat center/contain;
+}
+
+.recipes__hero--bottomleft{
+    color: var(--textBlack);
+    
+}
+
+.recipes__hero--bottomleft p:first-child{
+    font-size: 4rem;
+    letter-spacing: 0.8rem;
+    font-weight: 400;
+}
+
+.recipes__hero--bottomleft p:last-child{
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2.2rem;
+}
+
+.recipes__hero--bottomright{
+    justify-self: end;
+}
+
+.recipes__hero--bottomright button{
+    color: var(--textBlack);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
