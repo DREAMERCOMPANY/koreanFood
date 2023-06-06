@@ -11,7 +11,10 @@ html{
     font-family: 'Roboto', sans-serif;
 }
 
+
 :root{
+
+     /*colors*/
     --backgroundBlack: #202223;
     --backgroundButtons: #FE903F;
     --orangeTitle: #EA6300;
@@ -20,5 +23,80 @@ html{
     --textBlack: #292828;
     --silvercard: #BFBFBF;
     --goldcard: #F9DE4F; 
+
+    /*font-text*/
+
+    --H1 : 2.8rem;
+    --H2 : 2.4rem;
+    --H3: 2rem;
+    --P : 1.6rem;
+    --PLight: 1.2rem;
+
+     /*font-weight* 100 300 400 500 700*/
+
+     --thin: 100;
+     --light: 300;
+     --Regular: 400;
+     --medium: 500;
+     --bold: 700;
+
 }
+
+header{
+    width: 100%;
+    background-color: var(--backgroundBlack);
+}
+
+.nav{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    
+}
+
+.nav__text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+    
+  }
+  
+  .nav__text p:first-child {
+    font-size: var(--H3);
+    color: var(--orangeTitle);
+    font-weight: var(--Regular);
+    letter-spacing: 0.3rem;
+    
+  }
+
+  .nav__text p:last-child {
+    font-size: var(--P);
+    color: var(--textWhite);
+    font-weight: var(--light);
+    position: relative;
+    top: 1.2px;
+    letter-spacing: 0.1rem;
+  }
+
+  .nav .nav__icon{
+        display:inline-block;
+        width: 26px;
+        height: 26px;
+        background-image: url('../Assets/icons/menuMobile.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        align-self: center; 
+  }
+  
+  
+
+  
+  
+
+
+
 
