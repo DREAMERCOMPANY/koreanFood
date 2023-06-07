@@ -30,8 +30,8 @@ html{
     --H2 : 2.4rem;
     --H3: 2rem;
     --P : 1.6rem;
-    --PLight: 1.2rem;
-    --PExtraLight: 1rem;
+    --PLight: 0.9rem;
+    --PExtraLight: 0.8rem;
 
      /*font-weight* 100 300 400 500 700*/
 
@@ -124,17 +124,24 @@ header{
   .arrow__up, .arrow__down{
     display: inline-block;
     width: 10px;
-    height: 95%;
+    height: 28px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
   }
 
   .text__up, .text__down{
-    font-size: var(--PExtraLight);
-    font-weight: var(--light);
+    font-size:var(--PExtraLight);
+    font-weight: var(--Regular);
     letter-spacing: 0.2rem;
+  }
+
+  .white{
     color: var(--textWhite);
+  }
+
+  .black{
+    color: var(--textBlack);
   }
 
   .text__middle{
@@ -200,10 +207,73 @@ header{
     font-size: var(--PLight);
     font-weight: var(--medium);
     outline: none;
-    
-  
   }
 
+  .plans__container{
+    width: 85%;
+    margin: 0 auto;
+    padding: 12px 0;
+  }
+
+  .plans__content{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    color: var(--textBlack);
+    margin-bottom: 16px;
+  }
+  .plans__content--left{
+    width: 100%;
+  }
+
+  .plans--title{
+    font-size: var(--H3);
+    font-weight: var(--medium);
+    letter-spacing: 0.2rem;
+    color: var(--textBlack);
+    
+
+  }
+
+  .plans--subtitle{
+    font-size: var(--P);
+    font-weight: var(--Regular);
+    margin-bottom: 4px;
+    letter-spacing: 0.2rem;
+    
+  }
+
+  .plans--desc{
+    font-size: var(--PLight);
+    width: 85%;
+    font-weight: var(--light);
+    text-align: justify;
+  }
+  .plans__pocket--left{
+    width: 100%;
+  }
+
+  .plans__pocket--right{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    gap: 4px;
+    justify-content: end;
+  }
+
+  .plans__pocket--right-text{
+    text-align: center;
+  }
+
+
+  .plans__pocket--right span{
+    rotate: 180deg;
+  }
+
+  .plans__description--left p:first-child{
+    margin-bottom: 4px;
+  }
 
 
 
