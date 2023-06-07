@@ -31,6 +31,7 @@ html{
     --H3: 2rem;
     --P : 1.6rem;
     --PLight: 1.2rem;
+    --PExtraLight: 1rem;
 
      /*font-weight* 100 300 400 500 700*/
 
@@ -91,6 +92,121 @@ header{
         background-size: contain;
         align-self: center; 
   }
+
+  .hero__container{
+    width: 100%;
+    background-color: var(--backgroundBlack);
+    padding-bottom: 12px;
+  }
+  .hero__text{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+
+  .hero__text--left,.hero__text--right{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+
+  .arrow__up{
+    background-image: url('../Assets/img/arrowUp.png');
+  }
+
+  .arrow__down{
+    background-image: url('../Assets/img/arrowDown.png');
+  }
+
+  .arrow__up, .arrow__down{
+    display: inline-block;
+    width: 10px;
+    height: 95%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .text__up, .text__down{
+    font-size: var(--PExtraLight);
+    font-weight: var(--light);
+    letter-spacing: 0.2rem;
+    color: var(--textWhite);
+  }
+
+  .text__middle{
+    color: var(--orangeTitle);
+    font-size: var(--PLight);
+    font-weight: var(--Regular);
+    letter-spacing: 0.2rem;
+
+  }
+
+  .hero__intro{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0;
+  }
+
+  .hero__intro p:first-child{
+    color: var(--orangeTitle);
+    font-size: var(--H2);
+    font-weight: var(--medium);
+    letter-spacing: 0.4rem;
+  }
+
+  .hero__intro p:last-child{
+    color: var(--textWhite);
+    font-size: var(--PLight);
+    font-weight: var(--Regular);
+    letter-spacing: 0.2rem;
+  }
+
+  .hero__action{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    align-items: center;
+  }
+
+  .hero__action--line{
+    width: 30%;
+    
+  }
+
+  .left{
+    border-top: 1px solid var(--orangeTitle);
+  }
+
+  .right{
+    border-top: 1px solid var(--textWhite);
+  }
+
+  .hero__action button{
+    border: none;
+    padding: 4px 24px;
+    color: var(--textWhite);
+    background-color: var(--orangeTitle);
+    border-radius: 4px;
+    cursor:pointer;
+    font-size: var(--PLight);
+    font-weight: var(--medium);
+    outline: none;
+    
+  
+  }
+
+
+
+
   
   
 
