@@ -275,6 +275,101 @@ header{
     margin-bottom: 4px;
   }
 
+  .plans__cards{
+    width: 80%;
+    margin: 24px auto 12px auto;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    white-space: nowrap;
+  }
+
+  .plans__card{
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+  
+    flex-direction: column;
+  }
+
+  .plans__card--hero{
+     background-color: #E5BF5C;
+     border-radius: 8px;
+     padding: 12px 12px 16px 12px;
+     color: var(--textBlack);
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+  }
+
+  .plans__card--hero p:nth-child(2){
+    font-weight: var(--bold);
+    font-size: var(--H1);
+    letter-spacing: 0.2rem;
+    line-height: 2.8rem;
+    
+
+  }
+
+  .plans__card--hero p:nth-child(1){
+    font-weight: var(--bold);
+    font-size: var(--PLight);
+    letter-spacing: 0.2rem;
+    margin-bottom: 16px;
+  
+  }
+
+  .plans__card--hero p:nth-child(3){
+    font-weight: var(--light);
+    font-size: var(--PLight);
+    
+  }
+
+  .plans__card--desc{
+    padding: 16px 12px 12px 12px;
+  }
+
+  .plans__card--desc p{
+    display: flex;
+    align-items: center;
+    gap: 8px;  
+    margin-bottom: 4px;  
+    color: var(--textBlack);
+    font-weight: var(--Regular);
+    font-size: var(--PLight);
+  }
+
+  .plans__card--desc p::before{
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('../Assets/icons/checkplans.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    vertical-align: middle;
+    
+  }
+
+
+  .plans__button{
+    align-self: center;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    border-radius:40px;
+    width: 60%;
+    background-color: #E5BF5C;
+    padding: 8px 0;
+    cursor: pointer;
+    color: var(--textBlack);
+    font-size: var(--p);
+    font-weight: var(--bold);
+  }
+
+
 
 
   
