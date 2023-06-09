@@ -208,9 +208,9 @@ header{
     border-top: 1px solid var(--textWhite);
   }
 
-  .hero__action button{
+  .main__button{
     border: none;
-    padding: 4px 24px;
+    padding: 6px 24px;
     color: var(--textWhite);
     background-color: var(--orangeTitle);
     border-radius: 4px;
@@ -223,7 +223,8 @@ header{
   .plans__container{
     width: 85%;
     margin: 0 auto;
-    padding: 12px 0;
+    padding-top: 12px;
+    padding-bottom: 8px;
   }
 
   .plans__content{
@@ -242,16 +243,18 @@ header{
     font-size: var(--H3);
     font-weight: var(--medium);
     letter-spacing: 0.2rem;
-    color: var(--textBlack);
+    
+    
     
 
   }
 
   .plans--subtitle{
-    font-size: var(--P);
+    font-size: 14px;
     font-weight: var(--Regular);
     margin-bottom: 4px;
-    letter-spacing: 0.2rem;
+    line-height: 1.6rem;
+    
     
   }
 
@@ -288,8 +291,8 @@ header{
 
    .plans__cards{
     width: 80%;
-    margin: 24px auto 12px auto;
-    padding: 12px 8px;
+    margin: 0 auto;
+    padding: 8px 8px;
     display: flex;
     gap: 8px;
     overflow-x: auto;
@@ -307,8 +310,6 @@ header{
     display: flex;
     flex-direction: column;
     scroll-snap-align: start;
-    transition: transform 0.3s;
-   
   } 
 
   .plans__card:hover{
@@ -438,6 +439,105 @@ header{
     top: 4px;
     
   }
+
+  .love__container{
+    width: 100%;
+    background-color: var(--backgroundBlack);
+    padding: 16px 0;
+  }
+
+  .love__hero{
+    width: 85%;
+    margin: 0 auto;
+    padding: 0px 0px 16px 0px;
+  }
+
+  .love__hero--left{
+    width: 100%;
+  }
+
+  .love__values{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px; 
+  }
+
+  .love__values p:first-child{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: var(--H2);
+    font-weight: var(--medium);
+  
+  }
+
+  .love__values p:last-child{
+    text-align: center;
+    font-weight: var(--light);
+    font-size: var(--PLight);
+    letter-spacing: 2px;
+   
+  
+  }
+
+  .love__cards{
+    width: 100%;
+    background-color: var(--backgroundBlack);
+  }
+
+  .love__cards--content{
+    display: grid;
+    width: 85%;
+    margin: 0 auto;
+    gap: 8px;
+  }
+
+  .love__card{
+    padding: 12px 12px 20px 12px;
+    border-radius: 8px;
+    background-color: var(--backgroundCards);
+  }
+
+  .love__card p:nth-child(1){
+    color: var(--orangeTitle);
+    font-size: var(--PExtraLight);
+    font-weight: var(--Regular);
+    margin-bottom: 4px;
+
+  }
+
+  .love__card p:nth-child(2){
+    color: var(--textWhite);
+    font-size: var(--H3);
+    font-weight: var(--bold);
+    margin-bottom: 4px;
+    
+  }
+
+  .love__card p:nth-child(3){
+    color: var(--textWhite);
+    font-size: var(--PLight);
+    font-weight: var(--light);
+    margin-bottom: 12px;
+    text-align: justify;
+  }
+
+  .love__card a:nth-child(4){
+    color: var(--orangeTitle);
+    font-size: var(--PLight);
+    font-weight: var(--medium);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .love__button{
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+  }
+
 
   
   
