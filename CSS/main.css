@@ -290,7 +290,6 @@ header{
   }
 
    .plans__cards{
-    width: 80%;
     margin: 0 auto;
     padding: 8px 8px;
     display: flex;
@@ -537,6 +536,222 @@ header{
     display: flex;
     justify-content: center;
   }
+
+  .recipies__container{
+    width: 85%;
+    margin: 0 auto;
+    padding: 16px 0;
+  }
+
+  .recipies__discover{
+    display: flex;
+    flex-direction: column;
+    color: var(--textBlack);
+    margin-bottom: 16px;
+  }
+
+  .recipies__discover p:nth-child(1){
+    font-size: var(--H3);
+    font-weight: var(--medium);
+    align-self: center;
+    letter-spacing: 0.2rem;
+
+  }
+
+  .recipies__discover p:nth-child(2){
+    font-size: 14px;
+    font-weight: var(--medium);
+    align-self: center;
+    letter-spacing: 0.2rem;
+    margin-bottom: 4px;
+    
+  }
+
+  .recipies__discover p:nth-child(3){
+    text-align: justify;
+    font-style: var(--PLight);
+    font-weight: var(--light);
+  }
+
+  .recipies__hero{
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--textBlack);
+  }
+
+  .recipies__hero p:first-child{
+    letter-spacing: 2px;
+    font-size: var(--H3);
+    font-weight: var(--medium);
+  }
+
+  .recipies__hero p:last-child{
+    font-weight: var(--light);
+    font-size: var(--PLight);
+    letter-spacing: 2px;
+  }
+
+  .recipies__cards{
+    margin: 0 auto;
+    display: flex;
+    gap: 8px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    overscroll-behavior-x:contain ;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    padding: 8px 8px;
+  }
+
+  .recipies__cards--content{
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    scroll-snap-align: start;
+    display: flex;
+    flex-shrink: 0;
+    width: 190px;
+    flex-direction: column;
+  }
+
+  .recipies__cards--hero{
+    background-color: var(--backgroundBlack);
+    border-radius: 8px;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 16px;
+    
+  }
+
+  .recipies__cards--icon{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url('../Assets/icons/heartrecipe.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+
+  }
+
+  .recipies__cards--recipe {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    align-self: center;
+   
+    
+  }
+
+  .one{
+    background: url('../Assets/img/recipeone.png') no-repeat center / contain;
+    top: -2px;
+    width: 120px;
+    height: 120px;
+
+  }
+
+  .two{
+    background: url('../Assets/img/recipetwo.png') no-repeat center / contain;
+    top: 2px;
+    width: 123px;
+    height: 123px;
+
+  }
+
+  .three{
+    background: url('../Assets/img/recipethree.png') no-repeat center / contain;
+    width: 120px;
+    height: 120px;
+    top: 10px;
+
+  }
+
+  .four{
+    background: url('../Assets/img/recipefour.png') no-repeat center / contain;
+    width: 135px;
+    height: 135px;
+    top: -2px;
+
+  }
+
+  .five{
+    background: url('../Assets/img/recipefive.png') no-repeat center / contain;
+    top: 4px;
+    width: 155px;
+    height: 155px;
+    
+
+  }
+
+  .six{
+    background: url('../Assets/img/recipesix.png') no-repeat center / contain;
+    top: 8px;
+    width: 125px;
+    height: 125px;
+
+  }
+  
+
+  .recipies__cards--info {
+    margin-top: 20px;
+    padding: 0 16px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .recipies__cards--info p:nth-child(1) {
+    color: var(--orangeTitle);
+    font-size: var(--PExtraLight);
+    font-family: var(--Regular);
+    align-self: center;
+    letter-spacing: 1.2px;
+  }
+  
+  .recipies__cards--info p:nth-child(2) {
+    align-self: center;
+    color: var(--textBlack);
+    font-size: var(--H2);
+    font-weight: var(--bold);
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  
+  .recipies__cards--info p:nth-child(3) {
+    text-align: justify;
+    font-style: var(--PLight);
+    font-weight: var(--light);
+    color: var(--textBlack);
+    margin-bottom: 20px;
+  }
+  
+  .recipies__cards--info button:nth-child(4) {
+    outline: none;
+    border: none;
+    background-color: var(--backgroundBlack);
+    color: var(--textWhite);
+    width: 80%;
+    align-self: center;
+    border-radius: 50px;
+    padding: 7px 0;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+
+  .recipies__button{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+  }
+  
+
+  
 
 
   
