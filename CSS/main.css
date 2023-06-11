@@ -749,6 +749,85 @@ header{
     justify-content: center;
     margin-top: 8px;
   }
+
+  .recipies__learn{
+    background-color: var(--backgroundBlack); 
+    padding-top:16px ;
+  }
+  .recipies__experts{
+    width: 85%;
+    margin: 0 auto;
+    
+  }
+
+  .recipies__experts--hero{
+    text-align: center;
+    letter-spacing: 0.2rem;
+    margin-bottom: 4px;
+  }
+
+  .recipies__experts span:nth-child(1){
+    color: var(--textWhite);
+    font-size: var(--H3);
+    font-weight: var(--medium);
+
+  }
+
+  .recipies__experts span:nth-child(2){
+    color: var(--orangeTitle);
+    font-size: var(--H3);
+    font-weight: var(--medium);
+    
+  }
+  
+  .recipies__experts span:nth-child(3){
+    color: var(--textWhite);
+    font-size: var(--H3);
+    font-weight: var(--medium);
+    
+  }
+
+  .recipies__experts p:nth-child(4){
+    color: var(--textWhite);
+    font-size: var(--H3);
+    font-weight: var(--medium);
+  }
+
+  .recipies__experts--text{
+    text-align: justify;
+    font-style: var(--PLight);
+    font-weight: var(--light);
+    margin-bottom: 12px;
+    color: var(--textWhite);
+  }
+
+  .recipies__trust{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto 16px auto;
+
+  }
+
+  .recipies__trust--left, .recipies__trust--right{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+  }
+
+  .recipies__trust--right span{
+    transform: rotate(180deg);
+  }
+
+  .recipies__contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+    
+  }
+  
   
 
   
