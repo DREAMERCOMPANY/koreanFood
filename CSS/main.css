@@ -907,6 +907,97 @@ header{
     margin-top: 8px;
   }
 
+  footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+
+  .footer__up {
+    width: 85%;
+    margin: 0 auto;
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer__up--left p span{
+    color: var(--orangeTitle);
+  }
+
+  .footer__up--left p {
+    color: var(--textBlack);
+    font-weight: var(--medium);
+    font-size: 11px;
+    letter-spacing: 1px;
+    
+  }
+
+  .footer__up--right ul{
+    display: flex;
+    list-style: none;
+  }
+
+  .footer__up--right ul li{
+    margin-right: 4px;
+    color: var(--textBlack);
+    font-weight: var(--medium);
+    font-size: 10px;
+    cursor: pointer;
+    
+  }
+
+  .footer__up--right ul li::after{
+    content: " | ";
+    color: var(--orangeTitle);
+  }
+
+  .footer__down {
+    background-color: var(--backgroundBlack);
+    padding: 12px 0 16px;
+  }
+
+  .footer__down--content{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+
+  }
+
+  .footer__down--left{
+    border-top:1px solid var(--orangeTitle) ;
+    width: 18%;
+  }
+
+  .footer__down--center p{
+    color: var(--textWhite);
+    font-size: 10px;
+    font-weight: var(--Regular);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .footer__down--center p span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url('../Assets/icons/heartfooter.svg') no-repeat center/contain;
+  }
+  
+  .footer__down--right{
+    border-top:1px solid var(--textWhite) ;
+    width: 18%;
+  }
+
+
+
+  
 
  
 
