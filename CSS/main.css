@@ -57,6 +57,10 @@ header{
     
 }
 
+.up{
+  transform: rotate(180deg);
+}
+
 .nav__text {
     display: flex;
     align-items: center;
@@ -752,7 +756,7 @@ header{
 
   .recipies__learn{
     background-color: var(--backgroundBlack); 
-    padding-top:16px ;
+    padding:16px 0 ;
   }
   .recipies__experts{
     width: 85%;
@@ -797,36 +801,116 @@ header{
     text-align: justify;
     font-style: var(--PLight);
     font-weight: var(--light);
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     color: var(--textWhite);
   }
 
-  .recipies__trust{
-    display: flex;
-    justify-content: space-between;
-    width: 85%;
-    margin: 0 auto 16px auto;
+  
 
+  .learn__container{
+    width: 100%;
+    background-color: var(--backgroundBlack);
   }
 
-  .recipies__trust--left, .recipies__trust--right{
+  .learn__content{
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 12px;
+    
+  }
+
+  .learn__text{
     display: flex;
-    align-items: center;
-    gap: 4px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .learn__text p:first-child{
+    color: var(--textWhite);
+    text-align: center;
+    margin-bottom: 4px;
+    font-weight: var(--medium);
+    font-size: var(--H3);
+  }
+
+  .learn__text p:first-child span{
+    color: var(--orangeTitle);
+  }
+
+  .learn__text p:last-child{
+    text-align: justify;
+    font-style: var(--PLight);
+    font-weight: var(--light);
+    margin-bottom: 8px;
+    color: var(--textWhite);
+  }
+
+  
+
+  .learn__experience{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .learn__experience--text{
     text-align: center;
   }
 
-  .recipies__trust--right span{
-    transform: rotate(180deg);
+  .learn__experience--text p span{
+    color: var(--orangeTitle);
   }
 
-  .recipies__contact{
-    width: 100%;
+  .learn__experience--text p{
+    color: var(--textWhite);
+    font-weight: var(--medium);
+    font-size: var(--H3);
+  }
+
+  .learn__card{
     display: flex;
-    justify-content: center;
-    padding-bottom: 16px;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .learn__card--item{
+    background-color: var(--backgroundCards);
+    border-radius: 8px;
+    padding: 12px;
+  }
+
+  .learn__card--item p:nth-child(1){
+    color: var(--orangeTitle);
+    font-weight: var(--Regular);
+    font-size: var(--PLight);
+    margin-bottom: 4px;
+
+  }
+
+  .learn__card--item p:nth-child(2){
+    color: var(--textWhite);
+    font-weight: var(--medium);
+    font-size: var(--H3);
+    margin-bottom: 4px;
     
   }
+
+  .learn__card--item p:nth-child(3){
+    text-align: justify;
+    font-style: var(--PLight);
+    font-weight: var(--light);
+    color: var(--textWhite);
+  }
+
+  .learn__experience button{
+    align-self: center;
+    margin-top: 8px;
+  }
+
+
+ 
+
+
   
   
 
