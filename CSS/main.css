@@ -26,8 +26,8 @@ html{
 
     /*font-text*/
 
-    --H1 : 2.8rem;
-    --H2 : 2.4rem;
+    --H1 : 3.8rem;
+    --H2 : 3rem;
     --H3: 2rem;
     --P : 1.6rem;
     --PLight: 0.9rem;
@@ -55,6 +55,10 @@ header{
     justify-content: space-between;
     padding: 8px 0;
     
+}
+
+.nav__list{
+  display: none;
 }
 
 .up{

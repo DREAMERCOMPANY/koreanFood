@@ -1,0 +1,32 @@
+.nav__text p:first-child{
+    font-size: var(--H1);
+}
+
+.nav__text p:last-child{
+    font-size: var(--H3);
+}
+
+.nav__icon{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.nav__list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+ .nav__list li{
+    font-size: 1.4rem;
+    margin-right: 4px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    cursor: pointer;
+} 
+
+.nav__list li::after{
+    content: " | ";
+    color: var(--orangeTitle);
+}
