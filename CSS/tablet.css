@@ -55,4 +55,105 @@
     font-size: 11px;
 }
 
+.plans--title{
+    font-size: var(--H2);
+}
 
+.plans--subtitle{
+    font-size: var(--H3);
+}
+
+.plans--desc{
+    font-size: 13px; 
+}
+
+
+
+.plans__card--hero p:nth-child(1){
+    font-size: var(--P);
+
+}
+
+.plans__card--hero p:nth-child(2){
+    font-size: var(--H1);
+    
+}
+
+.plans__card--hero p:nth-child(3){
+    font-size: 11px;
+    
+}
+
+.plans__card--desc p{
+    font-size: 11px;
+}
+
+.plans__button {
+    font-size: 11px;
+}
+
+.love__cards--content{
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.love__card p:nth-child(1){
+    font-size: 11px;
+    font-weight: var(--light);
+
+}
+
+.love__card p:nth-child(2){
+    font-size: 28px;
+    
+}
+
+.love__card p:nth-child(3){
+    font-size: 12px;
+    
+}
+
+.love__card a:nth-child(4){
+    font-size: 11px;
+}
+
+.recipies__discover p:nth-child(1){
+    font-size: var(--H2);
+}
+
+.recipies__discover p:nth-child(2){
+    font-size: 13px;
+}
+
+.recipies__hero p:first-child{
+    font-size: 24px; 
+}
+
+.recipies__hero p:last-child{
+    font-size: 12px; 
+}
+
+.recipies__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+    justify-items: center;
+    align-items: center;   
+}
+
+.recipies__cards--content {
+    width: 100%;
+}
+
+.recipies__cards--info p:nth-child(1), .recipies__cards--info button:nth-child(4){
+    font-size: 11px;
+}
+
+.recipies__cards--info p:nth-child(2){
+    font-size: var(--H2);
+    
+}
+
+.recipies__cards--info p:nth-child(3){
+    font-size: 13px;
+    
+}
