@@ -19,14 +19,40 @@
 }
 
  .nav__list li{
-    font-size: 1.4rem;
-    margin-right: 4px;
+    font-size: 1.1rem;
+    padding-right: 4px;
     font-weight: 300;
-    letter-spacing: 1px;
+    letter-spacing: 1.3px;
     cursor: pointer;
 } 
 
-.nav__list li::after{
+.nav__list li::before{
     content: " | ";
     color: var(--orangeTitle);
 }
+
+.arrow__up, .arrow__down{
+    height: 38px;
+   
+}
+
+.text__up,.text__middle,.text__down{
+    letter-spacing: 0.3rem;
+    font-size: 12px;
+}
+
+.hero__intro p:first-child{
+    font-size: var(--H1);
+    letter-spacing: 0.3rem
+}
+
+.hero__intro p:last-child{
+    font-size: var(--P);
+    letter-spacing: 0.3rem
+}
+
+.main__button{
+    font-size: 11px;
+}
+
+
