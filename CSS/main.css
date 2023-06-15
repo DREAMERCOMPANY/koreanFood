@@ -814,6 +814,8 @@ header{
     width: 85%;
     margin: 0 auto;
     padding-top: 12px;
+    display: flex;
+    flex-direction: column;
     
   }
 
@@ -900,9 +902,10 @@ header{
     color: var(--textWhite);
   }
 
-  .learn__experience button{
-    align-self: center;
+  .learn__content button{
+    width: min-content;
     margin-top: 8px;
+    align-self: center;
   }
 
   footer{

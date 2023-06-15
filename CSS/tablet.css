@@ -150,10 +150,66 @@
 
 .recipies__cards--info p:nth-child(2){
     font-size: var(--H2);
-    
 }
 
 .recipies__cards--info p:nth-child(3){
     font-size: 13px;
     
 }
+.recipies__experts{
+    display: flex;
+    flex-direction: column;
+}
+
+.recipies__experts span:nth-child(1), .recipies__experts span:nth-child(2), .recipies__experts span:nth-child(3),.learn__text p:first-child, .learn__experience--text p{
+    font-size: 24px;
+}
+
+.recipies__experts span:nth-child(3)::after{
+    content: " EXPERTS";
+}
+
+.recipies__experts p:nth-child(4){
+    display: none;
+}
+
+.recipies__experts--text{
+    width: 90%;
+    align-self:center ;
+}
+
+.learn__content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 8px; 
+    row-gap: 12px; 
+    justify-items: center; 
+}
+
+.learn__content button{
+    grid-column: 1 / 3;
+    width: min-content;
+}
+
+
+.learn__card--item p:nth-child(1){
+    font-size: 11px;
+    font-weight: var(--light);
+}
+
+.learn__card--item p:nth-child(2) {
+    font-size: 22px;
+}
+.learn__text p:last-child{
+    width: 90%;
+    align-self: center;
+}
+
+.learn__card--item p:nth-child(3),.learn__text p:last-child, .recipies__experts--text {
+    font-size: 12px;  
+}
+
+
+
+
+
