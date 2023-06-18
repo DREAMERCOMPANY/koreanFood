@@ -955,6 +955,44 @@ header{
     color: var(--orangeTitle);
   }
 
+  .footer__up--input {
+    height: 32px; 
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    padding: 12px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out; 
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+    width: 260px;
+    display: none;
+  }
+  
+  .footer__up--input:focus {
+    box-shadow: 0 0 0 1px var(--orangeTitle);
+    border-color: var(--orangeTitle);
+    outline: none;
+  }
+
+  .footer__up--button{
+    height: 32px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border:none ;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 0 16px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background-color: var(--orangeTitle);
+    color: var(--textWhite);
+    position: relative;
+    right: 77px;
+    cursor: pointer; 
+    display: none;
+  }
+
+
   .footer__down {
     background-color: var(--backgroundBlack);
     padding: 12px 0 16px;

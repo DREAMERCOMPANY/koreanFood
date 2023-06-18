@@ -56,15 +56,15 @@
 }
 
 .plans--title{
-    font-size: var(--H2);
+    font-size: 24px;
 }
 
 .plans--subtitle{
-    font-size: var(--H3);
+    font-size: 22px;
 }
 
 .plans--desc{
-    font-size: 13px; 
+    font-size: 12px; 
 }
 
 
@@ -104,7 +104,7 @@
 }
 
 .love__card p:nth-child(2){
-    font-size: 28px;
+    font-size: 22px;
     
 }
 
@@ -117,12 +117,20 @@
     font-size: 11px;
 }
 
+.love__values p:first-child {
+    font-size: 24px;
+}
+
+.love__values p:last-child{
+    font-size: 12px;
+}
+
 .recipies__discover p:nth-child(1){
-    font-size: var(--H2);
+    font-size: 24px;
 }
 
 .recipies__discover p:nth-child(2){
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .recipies__hero p:first-child{
@@ -149,11 +157,11 @@
 }
 
 .recipies__cards--info p:nth-child(2){
-    font-size: var(--H2);
+    font-size: 22px;
 }
 
 .recipies__cards--info p:nth-child(3){
-    font-size: 13px;
+    font-size: 12px;
     
 }
 .recipies__experts{
@@ -206,8 +214,46 @@
 }
 
 .learn__card--item p:nth-child(3),.learn__text p:last-child, .recipies__experts--text {
-    font-size: 12px;  
+    font-size: 12px; 
+     
 }
+
+.footer__up--left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer__up--left p,.footer__up--right ul li{
+    font-size: 12px;
+}
+
+
+
+.footer__down--left, .footer__down--right{
+    width: 30%;
+}
+
+.footer__down--center p{
+    font-size: 12px;
+}
+
+.footer__down--center p span{
+    width: 12px;
+    height: 12px;
+}
+
+.recipies__cards{
+    overflow-x: hidden;
+}
+
+
+
+
+ 
+
+
 
 
 
