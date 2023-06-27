@@ -68,13 +68,14 @@ header{
 .nav__text {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
     justify-content: space-between;
+    
     
   }
   
   .nav__text p:first-child {
-    font-size: var(--H3);
+    font-size: 2.8rem;
     color: var(--orangeTitle);
     font-weight: var(--Regular);
     letter-spacing: 0.3rem;
@@ -82,7 +83,7 @@ header{
   }
 
   .nav__text p:last-child {
-    font-size: var(--P);
+    font-size: 2rem;
     color: var(--textWhite);
     font-weight: var(--light);
     position: relative;
@@ -139,7 +140,7 @@ header{
   }
 
   .text__up, .text__down{
-    font-size:var(--PExtraLight);
+    font-size:1rem;
     font-weight: var(--Regular);
     letter-spacing: 0.2rem;
   }
@@ -165,7 +166,7 @@ header{
 
   .text__middle{
     color: var(--orangeTitle);
-    font-size: var(--PLight);
+    font-size: 1rem;
     font-weight: var(--Regular);
     letter-spacing: 0.2rem;
 
@@ -182,16 +183,17 @@ header{
 
   .hero__intro p:first-child{
     color: var(--orangeTitle);
-    font-size: var(--H2);
+    font-size: 3.8rem;
     font-weight: var(--medium);
     letter-spacing: 0.4rem;
   }
 
   .hero__intro p:last-child{
     color: var(--textWhite);
-    font-size: var(--PLight);
+    font-size: 1.6rem;
     font-weight: var(--Regular);
     letter-spacing: 0.2rem;
+    line-height: 1.6rem;
   }
 
   .hero__action{
@@ -223,7 +225,7 @@ header{
     background-color: var(--orangeTitle);
     border-radius: 4px;
     cursor:pointer;
-    font-size: var(--PLight);
+    font-size: 1rem;
     font-weight: var(--medium);
     outline: none;
   }
