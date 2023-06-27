@@ -160,6 +160,10 @@ header{
     background-color: var(--goldcard);
   }
 
+  .orange{
+    color: var(--orangeTitle);
+  }
+
   .bronze{
     background-color: #E5BF5C;
   }
@@ -250,7 +254,7 @@ header{
   }
 
   .plans--title{
-    font-size: var(--H3);
+    font-size: 2rem;
     font-weight: var(--medium);
     letter-spacing: 0.2rem;
     
@@ -260,7 +264,7 @@ header{
   }
 
   .plans--subtitle{
-    font-size: 14px;
+    font-size: 1.6rem;
     font-weight: var(--Regular);
     margin-bottom: 4px;
     line-height: 1.6rem;
@@ -269,7 +273,7 @@ header{
   }
 
   .plans--desc{
-    font-size: var(--PLight);
+    font-size: 1.3rem;
     width: 85%;
     font-weight: var(--light);
     text-align: justify;
@@ -338,7 +342,7 @@ header{
 
   .plans__card--hero p:nth-child(2){
     font-weight: var(--bold);
-    font-size: var(--H1);
+    font-size: 3.8rem;
     letter-spacing: 0.2rem;
     line-height: 2.8rem;
     
@@ -347,7 +351,7 @@ header{
 
   .plans__card--hero p:nth-child(1){
     font-weight: var(--bold);
-    font-size: var(--PLight);
+    font-size: 1.2rem;
     letter-spacing: 0.2rem;
     margin-bottom: 16px;
   
@@ -355,7 +359,7 @@ header{
 
   .plans__card--hero p:nth-child(3){
     font-weight: var(--light);
-    font-size: var(--PLight);
+    font-size: 1.2rem;
     
   }
 
@@ -370,7 +374,7 @@ header{
     margin-bottom: 4px;  
     color: var(--textBlack);
     font-weight: var(--Regular);
-    font-size: var(--PLight);
+    font-size: 1.2rem;
   }
 
   .plans__card--desc p::before{
@@ -396,7 +400,7 @@ header{
     padding: 8px 0;
     cursor: pointer;
     color: var(--textBlack);
-    font-size: var(--p);
+    font-size: 1.2rem;
     font-weight: var(--bold);
   }
 
@@ -475,7 +479,7 @@ header{
   .love__values p:first-child{
     text-align: center;
     letter-spacing: 2px;
-    font-size: var(--H2);
+    font-size: 2rem;
     font-weight: var(--medium);
   
   }
@@ -483,7 +487,7 @@ header{
   .love__values p:last-child{
     text-align: center;
     font-weight: var(--light);
-    font-size: var(--PLight);
+    font-size: 1rem;
     letter-spacing: 2px;
    
   
@@ -509,7 +513,7 @@ header{
 
   .love__card p:nth-child(1){
     color: var(--orangeTitle);
-    font-size: var(--PExtraLight);
+    font-size: 1rem;
     font-weight: var(--Regular);
     margin-bottom: 4px;
 
@@ -517,7 +521,7 @@ header{
 
   .love__card p:nth-child(2){
     color: var(--textWhite);
-    font-size: var(--H3);
+    font-size: 2rem;
     font-weight: var(--bold);
     margin-bottom: 4px;
     
@@ -525,7 +529,7 @@ header{
 
   .love__card p:nth-child(3){
     color: var(--textWhite);
-    font-size: var(--PLight);
+    font-size: 1.3rem;
     font-weight: var(--light);
     margin-bottom: 12px;
     text-align: justify;
@@ -533,7 +537,7 @@ header{
 
   .love__card a:nth-child(4){
     color: var(--orangeTitle);
-    font-size: var(--PLight);
+    font-size: 1rem;
     font-weight: var(--medium);
     width: 100%;
     display: flex;
@@ -561,7 +565,7 @@ header{
   }
 
   .recipies__discover p:nth-child(1){
-    font-size: var(--H3);
+    font-size: 2rem;
     font-weight: var(--medium);
     align-self: center;
     letter-spacing: 0.1rem;
@@ -572,7 +576,7 @@ header{
   .recipies__discover p:nth-child(2){
     text-align: justify;
     font-weight: var(--light);
-    font-size: 12px;
+    font-size: 1.3rem;
   }
 
   
@@ -587,13 +591,13 @@ header{
 
   .recipies__hero p:first-child{
     letter-spacing: 2px;
-    font-size: var(--H3);
+    font-size: 2rem;
     font-weight: var(--medium);
   }
 
   .recipies__hero p:last-child{
     font-weight: var(--light);
-    font-size: var(--PLight);
+    font-size: 1rem;
     letter-spacing: 2px;
   }
 
@@ -712,7 +716,7 @@ header{
   
   .recipies__cards--info p:nth-child(1) {
     color: var(--orangeTitle);
-    font-size: var(--PExtraLight);
+    font-size: 1rem;
     font-family: var(--Regular);
     align-self: center;
     letter-spacing: 1.2px;
@@ -721,7 +725,7 @@ header{
   .recipies__cards--info p:nth-child(2) {
     align-self: center;
     color: var(--textBlack);
-    font-size: var(--H2);
+    font-size: 2.5rem;
     font-weight: var(--bold);
     letter-spacing: 2px;
     margin-bottom: 8px;
@@ -729,7 +733,7 @@ header{
   
   .recipies__cards--info p:nth-child(3) {
     text-align: justify;
-    font-style: var(--PLight);
+    font-size: 1.3rem;
     font-weight: var(--light);
     color: var(--textBlack);
     margin-bottom: 20px;
@@ -744,7 +748,7 @@ header{
     align-self: center;
     border-radius: 50px;
     padding: 7px 0;
-    font-size: 11px;
+    font-size: 1rem;
     letter-spacing: 0.5px;
   }
 
@@ -772,34 +776,34 @@ header{
 
   .recipies__experts span:nth-child(1){
     color: var(--textWhite);
-    font-size: var(--H3);
+    font-size: 2rem;
     font-weight: var(--medium);
 
   }
 
   .recipies__experts span:nth-child(2){
     color: var(--orangeTitle);
-    font-size: var(--H3);
+    font-size: 2rem;
     font-weight: var(--medium);
     
   }
   
   .recipies__experts span:nth-child(3){
     color: var(--textWhite);
-    font-size: var(--H3);
+    font-size: 2rem;
     font-weight: var(--medium);
     
   }
 
   .recipies__experts p:nth-child(4){
     color: var(--textWhite);
-    font-size: var(--H3);
+    font-size: 2rem;
     font-weight: var(--medium);
   }
 
   .recipies__experts--text{
     text-align: justify;
-    font-style: var(--PLight);
+    font-size: 1.3rem;
     font-weight: var(--light);
     margin-bottom: 8px;
     color: var(--textWhite);
@@ -831,7 +835,7 @@ header{
     text-align: center;
     margin-bottom: 4px;
     font-weight: var(--medium);
-    font-size: var(--H3);
+    font-size: 2rem;
   }
 
   .learn__text p:first-child span{
@@ -840,7 +844,7 @@ header{
 
   .learn__text p:last-child{
     text-align: justify;
-    font-style: var(--PLight);
+    font-size: 1.3rem;
     font-weight: var(--light);
     margin-bottom: 8px;
     color: var(--textWhite);
@@ -865,7 +869,7 @@ header{
   .learn__experience--text p{
     color: var(--textWhite);
     font-weight: var(--medium);
-    font-size: var(--H3);
+    font-size: 2rem;
   }
 
   .learn__card{
@@ -884,7 +888,7 @@ header{
   .learn__card--item p:nth-child(1){
     color: var(--orangeTitle);
     font-weight: var(--Regular);
-    font-size: var(--PLight);
+    font-size: 1rem;
     margin-bottom: 4px;
 
   }
@@ -892,14 +896,14 @@ header{
   .learn__card--item p:nth-child(2){
     color: var(--textWhite);
     font-weight: var(--medium);
-    font-size: var(--H3);
+    font-size: 2rem;
     margin-bottom: 4px;
     
   }
 
   .learn__card--item p:nth-child(3){
     text-align: justify;
-    font-style: var(--PLight);
+    font-size: 1.3rem;
     font-weight: var(--light);
     color: var(--textWhite);
   }
@@ -933,7 +937,7 @@ header{
   .footer__up--left p {
     color: var(--textBlack);
     font-weight: var(--medium);
-    font-size: 11px;
+    font-size: 1rem;
     letter-spacing: 1px;
     
   }
@@ -947,7 +951,7 @@ header{
     margin-right: 4px;
     color: var(--textBlack);
     font-weight: var(--medium);
-    font-size: 10px;
+    font-size: 1rem;
     cursor: pointer;
     
   }
@@ -984,7 +988,7 @@ header{
     border: 1px solid #ccc;
     outline: none;
     padding: 0 16px;
-    font-size: 12px;
+    font-size: 1rem;
     letter-spacing: 1px;
     background-color: var(--orangeTitle);
     color: var(--textWhite);
@@ -1017,7 +1021,7 @@ header{
 
   .footer__down--center p{
     color: var(--textWhite);
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: var(--Regular);
     display: flex;
     align-items: center;
