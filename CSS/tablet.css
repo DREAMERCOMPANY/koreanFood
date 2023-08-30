@@ -1,9 +1,9 @@
 .nav__text p:first-child{
-    font-size: var(--H1);
+    font-size: 4rem;
 }
 
 .nav__text p:last-child{
-    font-size: var(--H3);
+    font-size: 3rem;
 }
 
 .nav__icon{
@@ -19,7 +19,7 @@
 }
 
  .nav__list li{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding-right: 4px;
     font-weight: 300;
     letter-spacing: 1.3px;
@@ -31,6 +31,16 @@
     color: var(--orangeTitle);
 }
 
+.nav__list li:hover::before{
+    color: var(--textWhite);
+}
+
+.nav__list li:hover{
+    color: var(--orangeTitle);
+}
+
+
+
 .arrow__up, .arrow__down{
     height: 38px;
    
@@ -38,58 +48,59 @@
 
 .text__up,.text__middle,.text__down{
     letter-spacing: 0.3rem;
-    font-size: 12px;
+    font-size: 1.3rem;
 }
 
 .hero__intro p:first-child{
-    font-size: var(--H1);
+    font-size: 6rem;
     letter-spacing: 0.3rem
 }
 
 .hero__intro p:last-child{
-    font-size: var(--P);
-    letter-spacing: 0.3rem
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    line-height: 1.2rem;
 }
 
 .main__button{
-    font-size: 11px;
+    font-size: 1.3rem;
 }
 
 .plans--title{
-    font-size: 24px;
+    font-size: 2.5rem;
 }
 
 .plans--subtitle{
-    font-size: 22px;
+    font-size: 2rem;
 }
 
 .plans--desc{
-    font-size: 12px; 
+    font-size: 1.4rem; 
 }
 
 
 
 .plans__card--hero p:nth-child(1){
-    font-size: var(--P);
+    font-size: 2rem;
 
 }
 
 .plans__card--hero p:nth-child(2){
-    font-size: var(--H1);
+    font-size: 4rem;
     
 }
 
 .plans__card--hero p:nth-child(3){
-    font-size: 11px;
+    font-size: 1.2rem;
     
 }
 
 .plans__card--desc p{
-    font-size: 11px;
+    font-size: 1.2rem;
 }
 
 .plans__button {
-    font-size: 11px;
+    font-size: 1.2rem;
 }
 
 .love__cards--content{
@@ -98,54 +109,53 @@
 }
 
 .love__card p:nth-child(1){
-    font-size: 11px;
+    font-size: 1.2rem;
     font-weight: var(--light);
 
 }
 
 .love__card p:nth-child(2){
-    font-size: 22px;
+    font-size: 3rem;
     
 }
 
 .love__card p:nth-child(3){
-    font-size: 12px;
+    font-size: 1.3rem;
     
 }
 
 .love__card a:nth-child(4){
-    font-size: 11px;
+    font-size: 1.2rem;
 }
 
 .love__values p:first-child {
-    font-size: 24px;
+    font-size: 3rem;
 }
 
 .love__values p:last-child{
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 .recipies__discover p:nth-child(1){
-    font-size: 24px;
+    font-size: 2.5rem;
 }
 
 .recipies__discover p:nth-child(2){
-    font-size: 12px;
+    font-size: 1.4rem;
 }
 
 .recipies__hero p:first-child{
-    font-size: 24px; 
+    font-size: 2.5rem; 
 }
 
 .recipies__hero p:last-child{
-    font-size: 12px; 
+    font-size: 1.2rem; 
 }
 
 .recipies__cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
-    justify-items: center;
-    align-items: center;   
+     
 }
 
 .recipies__cards--content {
@@ -153,15 +163,15 @@
 }
 
 .recipies__cards--info p:nth-child(1), .recipies__cards--info button:nth-child(4){
-    font-size: 11px;
+    font-size: 1.2rem;
 }
 
 .recipies__cards--info p:nth-child(2){
-    font-size: 22px;
+    font-size: 3rem;
 }
 
 .recipies__cards--info p:nth-child(3){
-    font-size: 12px;
+    font-size: 1.4rem;
     
 }
 .recipies__experts{
@@ -170,8 +180,9 @@
 }
 
 .recipies__experts span:nth-child(1), .recipies__experts span:nth-child(2), .recipies__experts span:nth-child(3),.learn__text p:first-child, .learn__experience--text p{
-    font-size: 24px;
+    font-size: 2.5rem;
 }
+
 
 .recipies__experts span:nth-child(3)::after{
     content: " EXPERTS";
@@ -201,12 +212,12 @@
 
 
 .learn__card--item p:nth-child(1){
-    font-size: 11px;
+    font-size: 1.2rem;
     font-weight: var(--light);
 }
 
 .learn__card--item p:nth-child(2) {
-    font-size: 22px;
+    font-size: 3rem;
 }
 .learn__text p:last-child{
     width: 90%;
@@ -214,8 +225,7 @@
 }
 
 .learn__card--item p:nth-child(3),.learn__text p:last-child, .recipies__experts--text {
-    font-size: 12px; 
-     
+    font-size: 1.3rem;     
 }
 
 .footer__up--left{
@@ -226,7 +236,15 @@
 }
 
 .footer__up--left p,.footer__up--right ul li{
-    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+.footer__up--right ul li:hover{
+    color: var(--orangeTitle);
+}
+
+.footer__up--right ul li::after{
+    color: var(--textBlack);
 }
 
 .footer__down--left, .footer__down--right{
@@ -234,7 +252,7 @@
 }
 
 .footer__down--center p{
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 .footer__down--center p span{

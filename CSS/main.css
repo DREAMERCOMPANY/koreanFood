@@ -43,6 +43,84 @@ html{
 
 }
 
+body{
+  position: relative;
+}
+
+.main-container{
+  z-index: 1; 
+  height: 100vh;
+  overflow: hidden;    
+}
+
+.loader{
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loader 2s linear forwards;
+}
+
+@keyframes loader{
+  0%{
+      visibility: visible;
+      opacity: 1;
+
+  }
+
+  95%{
+      visibility: visible;
+      opacity: 1;
+
+  }
+
+  100%{
+      visibility: hidden;
+      opacity: 0;
+
+  }
+}
+
+.loader div{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #EA6300;
+  transform: scale(0);
+  animation: scale 1.2s ease-in-out infinite;
+  margin: 8px;
+}
+
+.loader div:nth-child(1){
+  animation-delay: 0.2s;
+
+}
+
+.loader div:nth-child(2){
+  animation-delay: 0.4s;
+  
+}
+
+.loader div:nth-child(3){
+  animation-delay: 0.6s;
+  
+}
+@keyframes scale{
+  0%,100%{
+      transform: scale(1);
+
+  }
+
+  50%{
+      transform: scale(.2);
+
+  }
+}
+
 header{
     width: 100%;
     background-color: var(--backgroundBlack);
@@ -70,6 +148,7 @@ header{
     align-items: center;
     gap: 4px;
     justify-content: space-between;
+    cursor: pointer;
     
     
   }
@@ -750,6 +829,11 @@ header{
     padding: 7px 0;
     font-size: 1rem;
     letter-spacing: 0.5px;
+    cursor: pointer;
+  }
+
+  .recipies__cards--info button:nth-child(4):hover{
+    color: var(--orangeTitle);
   }
 
   .recipies__button{
@@ -993,7 +1077,7 @@ header{
     background-color: var(--orangeTitle);
     color: var(--textWhite);
     position: relative;
-    right: 77px;
+    right: 73px;
     cursor: pointer; 
     display: none;
   }
