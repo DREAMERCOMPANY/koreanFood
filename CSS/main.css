@@ -89,7 +89,7 @@ body{
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background-color: #EA6300;
+  background-color: var(--orangeTitle);
   transform: scale(0);
   animation: scale 1.2s ease-in-out infinite;
   margin: 8px;
