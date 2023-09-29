@@ -200,6 +200,40 @@ header{
     gap: 4px;
   }
 
+  .hero__text--left{
+    animation: left 1.2s ease-in-out 2.2s forwards;
+    transform: translateX(-240px)
+  }
+
+  @keyframes left{
+    from{
+      transform: translateX(-240px)
+
+    }
+
+    to{
+      transform: translateX(0px)
+
+    }
+  }
+
+  .hero__text--right{
+    transform: translateX(240px);
+    animation: right 1.2s ease-in-out 2.8s forwards;
+  }
+
+  @keyframes right{
+    from{
+      transform: translateX(240px)
+
+    }
+
+    to{
+      transform: translateX(0px)
+
+    }
+  }
+
 
   .arrow__up{
     background-image: url('../Assets/img/arrowUp.png');
@@ -262,6 +296,18 @@ header{
     flex-direction: column;
     align-items: center;
     padding: 24px 0;
+    transform: translateY(-180%);
+    animation: heroText 1.5s ease-in-out 1.5s forwards;
+  }
+
+  @keyframes heroText{
+    from{
+      transform: translateY(-180%);
+    }
+
+    to{
+      transform: translateY(0%);
+    }
   }
 
   .hero__intro p:first-child{
