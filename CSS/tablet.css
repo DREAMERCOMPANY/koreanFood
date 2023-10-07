@@ -11,6 +11,10 @@
     visibility: hidden;
 }
 
+.mobileMenu{
+    display: none;
+}
+
 
 .nav__list{
     display: flex;

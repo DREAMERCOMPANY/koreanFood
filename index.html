@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./script.js">
     <link rel="stylesheet" href="./CSS/main.css">
     <link rel="stylesheet" href="./CSS/tablet.css" media="screen and (min-width: 670px)">
     <link rel="stylesheet" href="./CSS/desktop.css" media="screen and (min-width: 920px )">
-    <script src="./script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
@@ -92,6 +90,8 @@
 
             }
         } */
+
+        
     </style>
     
 </head>
@@ -121,6 +121,21 @@
             </ul>
         </nav>
     </header>
+
+    <div class="mobileMenu inactive">
+        <div class="mobileMenu__header">
+           <span class="mobileMenu__logo"></span>
+            <span class="mobileMenu__closeIcon"></span> 
+        </div>
+        
+        <ul class="mobileMenu__options">
+            <li>Discover <span></span></li>
+            <li>Plans <span></span></li>
+            <li>Values <span></span></li>
+            <li>Learning <span></span></li>
+        </ul>
+        <button class="mobileMenu__actionButton">Get Started</button>
+    </div>
    
         
     <section class="hero__container">
@@ -489,26 +504,11 @@
 
     </section>
 
-    <!-- <script>
-
-    
- document.addEventListener("DOMContentLoaded", function () {
-    const loader = document.querySelector(".loader");
-    const mainContainer = document.querySelector(".main-container");
-
-    // Escucha el evento 'animationend' en el loader
-    loader.addEventListener("animationend", function () {
-        mainContainer.style.height = "auto";
-       
-    });
-
-   
-}); 
-    
-        </script> -->
-
-
+    <script src="./script.js"></script>
 </body>
+
+
+
 
 
 

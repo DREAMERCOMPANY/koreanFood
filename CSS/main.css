@@ -43,6 +43,12 @@ html{
 
 }
 
+.inactive{
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
 body{
   position: relative;
 }
@@ -180,6 +186,89 @@ header{
         background-size: contain;
         align-self: center; 
   }
+
+  
+
+  .mobileMenu{
+    width: 50%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 20px 20px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 1;
+    right: 36px;
+}
+.mobileMenu__header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.mobileMenu__logo{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url('../Assets/icons/mobileMenuLogo.svg') center/contain no-repeat;
+}
+
+.mobileMenu__closeIcon{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url('../Assets/icons/closeIcon.svg') center/contain no-repeat;
+
+}
+
+.mobileMenu__options{
+  padding: 26px 0;
+}
+
+
+.mobileMenu__options li{
+    list-style: none;
+    padding-bottom: 24px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: var(--backgroundCards);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.mobileMenu__options li span{
+    width: 10px;
+    height: 10px;
+    opacity: 0.8;
+    display: inline-block;
+    background: url('https://i.pinimg.com/564x/a8/e1/99/a8e199ec41a6f909eed018d685e3dd6c.jpg') center/contain no-repeat;  
+}
+
+.mobileMenu__actionButton{
+    width: 100%;
+    padding: 11px 0;
+    border-radius: 6px;
+    margin-bottom: 24px;
+    border: none;
+    outline: none;
+    border: 2px solid var(--orangeTitle);
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--backgroundCards);
+}
+
+.mobileMenu__actionButton:hover{
+  border: none;
+  background-color: var(--backgroundBlack);
+  color: rgb(239, 236, 236);
+
+}
+
+
 
   .hero__container{
     width: 100%;
