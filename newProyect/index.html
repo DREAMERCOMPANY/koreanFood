@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otaku's Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 670px)">
+    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 920px )">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600&family=REM:wght@200;400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="intro__page">
+        <header>
+            <nav class="nav">
+    
+                <div class="nav__text">
+                   <p>Otaku's</p>
+                   <p>Food</p> 
+                </div>
+                <span class="nav__icon"></span>
+    
+                <ul class="nav__list white">
+                    <li>Discover</li>
+                    <li>Plans</li>
+                    <li>Values</li>
+                    <span class="account"></span>
+                    <span class="shopping__cart"></span>
+                </ul>
+            </nav>
+        </header>
+    
+        <section class="hero__container">
+            <div class="hero__text">
+                <div class="hero__text--left">
+                    <span class="arrow__up"></span>
+                    <div class="hero__text--left-item">
+                        <p class="text__up white">MADE WITH</p>
+                        <p class="text__middle">100%</p>
+                        <p class="text__down white">LOVE</p>
+                    </div>
+                    
+                </div>
+                <div class="hero__text--right">
+                    <div class="hero__text--right-item">
+                        <p class="text__up white">OUR BEST</p>
+                        <p class="text__middle">RECIPIES</p>
+                        <p class="text__down white">FOR YOU</p>
+                    </div>
+                    
+                    <span class="arrow__down"></span>
+                </div>
+            </div>
+            <div class="hero__intro">
+                <p>DISCOVER</p>
+                <p>KOREAN FOOD</p>
+            </div>
+            <div class="hero__action">
+                <button class="main__button">GO</button>
+            </div>
+        </section>
+    </div>
+
+    <h1 class="parrafito inactive">HOLI JAJAJA</h1>
+
+    <script>
+        const d = document
+        const mainButton = d.querySelector('.main__button')
+        const firstSection = d.querySelector('.intro__page')
+        const H1 = d.querySelector('.parrafito')
+
+        mainButton.addEventListener('animationend', () => {
+    mainButton.addEventListener('mouseover', () => {
+        mainButton.style.background = '#EA6300'
+    });
+
+    mainButton.addEventListener('mouseout', () => {
+        mainButton.style.background = '#FE903F';
+    });
+});
+
+
+
+
+        mainButton.addEventListener('click', () => {
+            
+             setTimeout(()=>{
+                firstSection.classList.add('animate')
+             },100)
+    
+            // Escucha el evento de finalización de la animación
+            firstSection.addEventListener('animationend', () => {
+                firstSection.classList.add('inactive'); // Oculta el contenedor una vez que termina la animación
+            });
+
+            H1.classList.remove('inactive'); // Muestra el párrafo .parrafito
+        });
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+.intro__page{
+    background-image: url('../Assets/img/backgroundDesktop.jpg'); 
+}
+
+.hero__intro p:first-child{
+    font-size: 5rem;
+}
+
+.hero__intro p:last-child{
+    font-size: 2rem;
+}
+
+.nav__icon{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav__list{
+    display: block;
+}
+
+.nav__list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    animation: navOpacity 1.5s ease-in 4s forwards;
+    opacity: 0;
+}
+
+@keyframes navOpacity{
+    from{
+        opacity: 0;
+
+    }
+
+    to{
+        opacity: 1;
+
+    }
+}
+
+ .nav__list li{
+    font-size: 1.2rem;
+    padding-right: 4px;
+    font-weight: 300;
+    letter-spacing: 1.3px;
+    cursor: pointer;
+} 
+
+.nav__list li::before{
+    content: " | ";
+    color: var(--orangeTitle);
+}
+
+.nav__list li:hover::before{
+    color: var(--textWhite);
+}
+
+.nav__list li:hover{
+    color: var(--orangeTitle);
+}
+.account, .shopping__cart{
+    background: url('../Assets/img/backGroundBlackDesktop.png') center/cover no-repeat;
+    margin-left: 16px;
+    cursor: pointer;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.account{
+    background-image: url('../Assets/img/dogProfile.jpg'); 
+}
+
+.shopping__cart{
+    background-image: url('../Assets/img/shoppingCartIcon.jpg');
+}
