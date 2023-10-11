@@ -162,6 +162,7 @@ header{
   }
   
   .nav__text p:first-child {
+    opacity: 0.8;
     font-size: 2.8rem;
     color: var(--orangeTitle);
     font-weight: var(--Regular);
@@ -170,6 +171,7 @@ header{
   }
 
   .nav__text p:last-child {
+    opacity: 0.8;
     font-size: 2rem;
     color: var(--textWhite);
     font-weight: var(--light);
@@ -180,6 +182,7 @@ header{
 
   .nav .nav__icon{
         display:inline-block;
+        opacity: 0.8;
         width: 26px;
         height: 26px;
         background-image: url('../Assets/icons/menuMobile.png');
@@ -329,6 +332,7 @@ header{
     padding-bottom: 12px;
   }
   .hero__text{
+    opacity: 0.8;
     width: 85%;
     margin: 0 auto;
     display: flex;
@@ -432,6 +436,7 @@ header{
   }
 
   .hero__intro{
+    opacity: 0.8;
     width: 85%;
     margin: 0 auto;
     display: flex;
@@ -468,6 +473,7 @@ header{
   }
 
   .hero__action{
+    opacity: 0.8;
     width: 85%;
     margin: 0 auto;
     display: flex;
@@ -490,6 +496,7 @@ header{
   }
 
   .main__button{
+    opacity: 0.8;
     border: none;
     padding: 6px 24px;
     color: var(--textWhite);
@@ -521,16 +528,14 @@ header{
   }
 
   .plans--title{
+    opacity: 0.8;
     font-size: 2rem;
     font-weight: var(--medium);
     letter-spacing: 0.2rem;
-    
-    
-    
-
   }
 
   .plans--subtitle{
+    opacity: 0.8;
     font-size: 1.6rem;
     font-weight: var(--Regular);
     margin-bottom: 4px;
@@ -540,6 +545,7 @@ header{
   }
 
   .plans--desc{
+    opacity: 0.6;
     font-size: 1.3rem;
     width: 85%;
     font-weight: var(--light);
@@ -550,6 +556,8 @@ header{
   }
 
   .plans__pocket--right{
+
+    opacity: 0.8;
     display: flex;
     align-items: center;
     width: 50%;
@@ -612,11 +620,13 @@ header{
     font-size: 3.8rem;
     letter-spacing: 0.2rem;
     line-height: 2.8rem;
+    opacity: 0.8;
     
 
   }
 
   .plans__card--hero p:nth-child(1){
+    opacity: 0.8;
     font-weight: var(--bold);
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
@@ -627,6 +637,7 @@ header{
   .plans__card--hero p:nth-child(3){
     font-weight: var(--light);
     font-size: 1.2rem;
+    opacity: 0.6;
     
   }
 
@@ -635,6 +646,7 @@ header{
   }
 
   .plans__card--desc p{
+    opacity: 0.8;
     display: flex;
     align-items: center;
     gap: 8px;  
@@ -645,6 +657,7 @@ header{
   }
 
   .plans__card--desc p::before{
+    
     content: "";
     display: inline-block;
     width: 16px;
@@ -732,6 +745,10 @@ header{
     padding: 0px 0px 16px 0px;
   }
 
+  .love__hero--right{
+    opacity: 0.8;
+  }
+
   .love__hero--left{
     width: 100%;
   }
@@ -744,6 +761,7 @@ header{
   }
 
   .love__values p:first-child{
+    opacity: 0.8;
     text-align: center;
     letter-spacing: 2px;
     font-size: 2rem;
@@ -752,6 +770,7 @@ header{
   }
 
   .love__values p:last-child{
+    opacity: 0.6;
     text-align: center;
     font-weight: var(--light);
     font-size: 1rem;
@@ -779,6 +798,7 @@ header{
   }
 
   .love__card p:nth-child(1){
+    opacity: 0.8;
     color: var(--orangeTitle);
     font-size: 1rem;
     font-weight: var(--Regular);
@@ -787,6 +807,7 @@ header{
   }
 
   .love__card p:nth-child(2){
+    opacity: 0.8;
     color: var(--textWhite);
     font-size: 2rem;
     font-weight: var(--bold);
@@ -795,6 +816,7 @@ header{
   }
 
   .love__card p:nth-child(3){
+    opacity: 0.6;
     color: var(--textWhite);
     font-size: 1.3rem;
     font-weight: var(--light);
@@ -803,6 +825,7 @@ header{
   }
 
   .love__card a:nth-child(4){
+    opacity: 0.8;
     color: var(--orangeTitle);
     font-size: 1rem;
     font-weight: var(--medium);
@@ -832,6 +855,7 @@ header{
   }
 
   .recipies__discover p:nth-child(1){
+    opacity: 0.8;
     font-size: 2rem;
     font-weight: var(--medium);
     align-self: center;
@@ -841,6 +865,7 @@ header{
   }
 
   .recipies__discover p:nth-child(2){
+    opacity: 0.6;
     text-align: justify;
     font-weight: var(--light);
     font-size: 1.3rem;
@@ -857,12 +882,14 @@ header{
   }
 
   .recipies__hero p:first-child{
+    opacity: 0.8;
     letter-spacing: 2px;
     font-size: 2rem;
     font-weight: var(--medium);
   }
 
   .recipies__hero p:last-child{
+    opacity: 0.6;
     font-weight: var(--light);
     font-size: 1rem;
     letter-spacing: 2px;
@@ -901,6 +928,7 @@ header{
   }
 
   .recipies__cards--icon{
+    opacity: 0.9;
     display: inline-block;
     width: 18px;
     height: 18px;
@@ -929,6 +957,7 @@ header{
     top: -2px;
     width: 120px;
     height: 120px;
+    opacity: 1;
 
   }
 
@@ -982,6 +1011,7 @@ header{
   }
   
   .recipies__cards--info p:nth-child(1) {
+    opacity: 0.8;
     color: var(--orangeTitle);
     font-size: 1rem;
     font-family: var(--Regular);
@@ -990,6 +1020,7 @@ header{
   }
   
   .recipies__cards--info p:nth-child(2) {
+    opacity: 0.8;
     align-self: center;
     color: var(--textBlack);
     font-size: 2.5rem;
@@ -999,6 +1030,7 @@ header{
   }
   
   .recipies__cards--info p:nth-child(3) {
+    opacity: 0.6;
     text-align: justify;
     font-size: 1.3rem;
     font-weight: var(--light);
@@ -1007,6 +1039,7 @@ header{
   }
   
   .recipies__cards--info button:nth-child(4) {
+    opacity: 0.9;
     outline: none;
     border: none;
     background-color: var(--backgroundBlack);
@@ -1041,6 +1074,7 @@ header{
   }
 
   .recipies__experts--hero{
+    opacity: 0.8;
     text-align: center;
     letter-spacing: 0.2rem;
     margin-bottom: 4px;
@@ -1074,6 +1108,7 @@ header{
   }
 
   .recipies__experts--text{
+    opacity: 0.6;
     text-align: justify;
     font-size: 1.3rem;
     font-weight: var(--light);
@@ -1103,6 +1138,7 @@ header{
     justify-content: center;
   }
   .learn__text p:first-child{
+    opacity: 0.8;
     color: var(--textWhite);
     text-align: center;
     margin-bottom: 4px;
@@ -1115,6 +1151,7 @@ header{
   }
 
   .learn__text p:last-child{
+    opacity: 0.6;
     text-align: justify;
     font-size: 1.3rem;
     font-weight: var(--light);
@@ -1139,6 +1176,7 @@ header{
   }
 
   .learn__experience--text p{
+    opacity: 0.8;
     color: var(--textWhite);
     font-weight: var(--medium);
     font-size: 2rem;
@@ -1158,6 +1196,7 @@ header{
   }
 
   .learn__card--item p:nth-child(1){
+    opacity: 0.8;
     color: var(--orangeTitle);
     font-weight: var(--Regular);
     font-size: 1rem;
@@ -1166,6 +1205,7 @@ header{
   }
 
   .learn__card--item p:nth-child(2){
+    opacity: 0.8;
     color: var(--textWhite);
     font-weight: var(--medium);
     font-size: 2rem;
@@ -1174,6 +1214,7 @@ header{
   }
 
   .learn__card--item p:nth-child(3){
+    opacity: 0.6;
     text-align: justify;
     font-size: 1.3rem;
     font-weight: var(--light);
@@ -1181,6 +1222,7 @@ header{
   }
 
   .learn__content button{
+    opacity: 0.8;
     width: min-content;
     margin-top: 8px;
     align-self: center;
@@ -1274,6 +1316,7 @@ header{
   .footer__down {
     background-color: var(--backgroundBlack);
     padding: 12px 0 16px;
+    opacity: 0.97;
   }
 
   .footer__down--content{

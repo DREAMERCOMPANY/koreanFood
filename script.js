@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
         
     }
 
-
    }
 
    body.addEventListener('click', function (event) {
