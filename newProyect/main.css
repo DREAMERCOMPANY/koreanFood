@@ -66,7 +66,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loader 2s linear forwards;
+  animation: loader 1.5s linear forwards;
 }
 
 @keyframes loader{
@@ -258,13 +258,13 @@ header{
   }
 
   .hero__text--left{
-    animation: left 1.2s ease-in-out 2.2s forwards;
-    transform: translateX(-240px)
+    animation: left 1.2s ease-in-out 2.6s forwards;
+    transform: translateX(-300px)
   }
 
   @keyframes left{
     from{
-      transform: translateX(-240px)
+      transform: translateX(-300px)
 
     }
 
@@ -275,13 +275,13 @@ header{
   }
 
   .hero__text--right{
-    transform: translateX(240px);
-    animation: right 1.2s ease-in-out 2.8s forwards;
+    transform: translateX(300px);
+    animation: right 1.2s ease-in-out 3.2s forwards;
   }
 
   @keyframes right{
     from{
-      transform: translateX(240px)
+      transform: translateX(300px)
 
     }
 
@@ -354,13 +354,13 @@ header{
     flex-direction: column;
     align-items: center;
     padding: 24px 0;
-    transform: translateY(-400px);
-    animation: heroText 1.5s ease-in-out 1s forwards;
+    transform: translateY(-600px);
+    animation: heroText 1.2s ease-in-out 2s forwards;
   }
 
   @keyframes heroText{
     from{
-      transform: translateY(-400px);
+      transform: translateY(-600px);
       opacity: 0;
     }
 
@@ -410,17 +410,20 @@ header{
     font-size: 1.2rem;
     font-weight: var(--medium);
     outline: none;
-    animation: buttonOpacity 3.8s ease-in-out forwards;
+    animation: buttonOpacity 1s ease-in-out forwards;
+    animation-delay: 4.5s;
     opacity: 0;
 
   }
 
   @keyframes buttonOpacity{
     from{
+      display: none;
       opacity: 0;
 
     }
     to{
+      display: block;
       opacity: 0.5;
 
     }
