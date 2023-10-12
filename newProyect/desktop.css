@@ -1,3 +1,49 @@
 .intro__page{
     background-image: url('../Assets/img/backgroundDesktop.jpg'); 
 }
+
+.hero__intro p:first-child{
+    font-size: 8.5rem;
+}
+
+.hero__intro p:last-child{
+    font-size: 3.5rem;
+}
+
+.text__up, .text__down{
+    font-size: 1.5rem;
+
+}
+
+.text__middle{
+    font-size: 1.3rem;
+
+}
+
+.arrow__up, .arrow__down{
+    height: 100%;
+}
+
+.nav__text p:first-child{
+    font-size: 2.8rem;
+
+}
+
+.nav__text p:last-child{
+    font-size: 1.8rem;
+
+}
+
+.nav__list li{
+    font-size: 1.8rem;
+}
+
+.account, .shopping__cart{
+    width: 40px;
+    height: 40px;
+}
+
+.main__button{
+    width: 200px;
+    font-size: 1.6rem;
+}

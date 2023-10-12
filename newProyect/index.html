@@ -14,6 +14,12 @@
 </head>
 <body>
 
+    <section class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
     <div class="intro__page">
         <header>
             <nav class="nav">
@@ -72,10 +78,17 @@
         const mainButton = d.querySelector('.main__button')
         const firstSection = d.querySelector('.intro__page')
         const H1 = d.querySelector('.parrafito')
+        const brandName = d.getElementsByClassName('nav__text')[0]
+
+        brandName.addEventListener('click',()=>{
+           
+            location.reload()
+            
+        })
 
         mainButton.addEventListener('animationend', () => {
-    mainButton.addEventListener('mouseover', () => {
-        mainButton.style.background = '#EA6300'
+            mainButton.addEventListener('mouseover', () => {
+                mainButton.style.background = '#EA6300'
     });
 
     mainButton.addEventListener('mouseout', () => {
