@@ -57,6 +57,8 @@
     color: var(--textWhite);
 }
 
+
+
 .nav__list li:hover{
     color: var(--orangeTitle);
 }

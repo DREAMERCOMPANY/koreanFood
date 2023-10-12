@@ -23,7 +23,6 @@
     <div class="intro__page">
         <header>
             <nav class="nav">
-    
                 <div class="nav__text">
                    <p>Otaku's</p>
                    <p>Food</p> 
@@ -71,7 +70,25 @@
         </section>
     </div>
 
-    <h1 class="parrafito inactive">HOLI JAJAJA</h1>
+    <section class="discover inactive">
+        <header>
+            <nav class="nav">
+                <div class="nav__text">
+                   <p>Otaku's</p>
+                   <p class="black">Food</p> 
+                </div>
+                <span class="nav__icon"></span>
+    
+                <ul class="nav__list white">
+                    <li class="black">Discover</li>
+                    <li class="black">Plans</li>
+                    <li class="black">Values</li>
+                    <span class="account"></span>
+                    <span class="shopping__cart"></span>
+                </ul>
+            </nav>
+        </header>
+    </section>
 
     <script>
         const d = document
@@ -79,6 +96,7 @@
         const firstSection = d.querySelector('.intro__page')
         const H1 = d.querySelector('.parrafito')
         const brandName = d.getElementsByClassName('nav__text')[0]
+        const discoverSection = d.querySelector('.discover')
 
         brandName.addEventListener('click',()=>{
            
@@ -97,8 +115,6 @@
 });
 
 
-
-
         mainButton.addEventListener('click', () => {
             
              setTimeout(()=>{
@@ -110,9 +126,8 @@
                 firstSection.classList.add('inactive'); // Oculta el contenedor una vez que termina la animación
             });
 
-            H1.classList.remove('inactive'); // Muestra el párrafo .parrafito
+            discoverSection.classList.remove('inactive'); // Muestra el párrafo .parrafito
         });
-
 
     </script>
     

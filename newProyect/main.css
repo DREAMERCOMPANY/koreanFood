@@ -230,6 +230,20 @@ header{
         align-self: center; 
   }
 
+  .discover .nav__icon{
+    background-image: url('../Assets/icons/menu.png');
+
+  }
+
+  .discover .nav__list li:hover::before{
+    color: var(--textBlack);
+}
+
+.discover .nav__list{
+    animation: none;
+    opacity: 1;
+}
+
   /*Hero header styles*/
 
   .hero__container{
@@ -425,8 +439,11 @@ header{
     to{
       display: block;
       opacity: 0.5;
-
     }
+  }
+
+  .discover .nav__text .black{
+    color: var(--textBlack);
   }
 
   
