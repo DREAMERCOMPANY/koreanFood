@@ -158,18 +158,192 @@ body{
 
 
 
-header{
-    width: 100%;
-    height: 10%;
+
+
+.discover header{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  background-image: url('../Assets/img/backGroundWhite.jpg');
+
+}
+
+.discover .cards__container{
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 16px;
+    width: 80%;
     place-items: center;
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+    margin: 10px auto 24px auto;
+  
     
 }
+
+.recipies__cards--content{
+  height: 340px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  scroll-snap-align: start;
+  display: flex;
+  flex-shrink: 0;
+  width: 80%;
+  flex-direction: column;
+  animation-name: cardOpacity;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes cardOpacity{
+  from{
+    opacity: 0;
+
+  }
+
+  to{
+    opacity: 1;
+
+  }
+}
+
+.recipe-1{
+  animation-delay: 0.2s;
+}
+
+.recipe-2{
+  animation-delay: 0.6s;
+}
+
+.recipe-3{
+  animation-delay: 1s;
+}
+
+
+.recipe-4{
+  animation-delay: 1.4s;
+}
+
+.recipe-5{
+  animation-delay: 1.8s;
+}
+
+.recipe-6{
+  animation-delay: 2.2s;
+}
+
+
+
+
+
+.recipies__cards--hero{
+  background-color: var(--backgroundBlack);
+  border-radius: 8px;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 16px;
+  
+}
+
+.white__heart{
+  background-image: url('../Assets/icons/heartrecipe.svg');
+
+}
+
+.orange__heart{
+  background-image: url('../Assets/img/orangeH.png');
+
+}
+
+.recipies__cards--icon{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+
+}
+
+.recipies__cards--recipe {
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  align-self: center;
+  top: 4px;
+ 
+}
+
+ .recipies__cards--info {
+    margin-top: 20px;
+    padding: 0 16px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .recipies__cards--info p:nth-child(1) {
+    color: var(--orangeTitle);
+    font-size: 1rem;
+    font-family: var(--Regular);
+    align-self: center;
+    letter-spacing: 1.2px;
+  }
+  
+  .recipies__cards--info p:nth-child(2) {
+    align-self: center;
+    color: var(--textBlack);
+    font-size: 2.5rem;
+    font-weight: var(--bold);
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  
+  .recipies__cards--info p:nth-child(3) {
+    text-align: justify;
+    font-size: 1.3rem;
+    font-weight: var(--light);
+    color: var(--textBlack);
+    margin-bottom: 20px;
+  }
+  
+  .recipies__cards--info button:nth-child(4) {
+    outline: none;
+    border: none;
+    background-color: var(--backgroundBlack);
+    color: var(--textWhite);
+    width: 80%;
+    align-self: center;
+    border-radius: 50px;
+    padding: 7px 0;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  .recipies__cards--info button:nth-child(4):hover{
+    background-color: var(--backgroundButtons);
+    color: var(--textBlack);
+  }
+
+  .recipies__cards--img{
+    width: 120px;
+    height: 120px; 
+  }
+
+  
+
+  
+  
+
+  
+
 
 .nav{
     width: 90%;
@@ -218,6 +392,11 @@ header{
     padding-left: 4px;
   }
 
+  .block{
+    display: block;
+    padding: 24px 0;
+  }
+
   .nav .nav__icon{
         display:inline-block;
         cursor: pointer;
@@ -228,6 +407,61 @@ header{
         background-position: center;
         background-size: contain;
         align-self: center; 
+  }
+
+  .discover header .nav__content{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 24px 0 20px 0;
+  }
+
+  .nav__content--text{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav__content .nav__content--text h2{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--textBlack);
+    
+  }
+
+  .nav__content .nav__content--text span{
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+    align-self: center;
+    color: var(--textBlack);
+  }
+
+  .nav__content .nav__content--text p{
+    color: var(--textBlack);
+    text-align: center;
+  }
+
+  .nav__content--text button{
+    margin-top: 20px;
+    border-radius: 12px;
+    width: 215px;
+    border: none;
+    outline: none;
+    background-color: var(--backgroundButtons);
+    padding: 6px 0;
+    align-self: center;
+    font-family: inherit;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  .nav__content--text button:hover{
+    opacity: 1;
+  }
+    
+  .nav__content .nav__content--image{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
   }
 
   .discover .nav__icon{
