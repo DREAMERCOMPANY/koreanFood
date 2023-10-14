@@ -1,0 +1,32 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="openGoogleMapsButton">Abrir Google Maps</button>
+    
+</body>
+
+<script>
+    document.getElementById("openGoogleMapsButton").addEventListener("click", function() {
+        // Dirección que deseas abrir en Google Maps
+        var direccion = "cra 68 d # 2b-58";
+    
+        // URL personalizada para abrir Google Maps con la dirección
+        var url = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(direccion);
+        console.log(url)
+    
+        // Abre Google Maps en una nueva ventana o pestaña del navegador
+        window.open(url, "_blank");
+    });
+    </script>
+</html>

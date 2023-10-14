@@ -47,7 +47,6 @@ html{
 
 .inactive{
   display: none;
-  opacity: 0;
   visibility: hidden;
 }
 
@@ -139,9 +138,8 @@ body{
 }
 
 .animate{
-    animation-name: moveUp;
-    animation-duration: 2s ;
-    animation-fill-mode: forwards;
+  animation: moveUp 2s forwards;
+
 }
 
 @keyframes moveUp{
@@ -160,12 +158,11 @@ body{
 
 
 
-.discover header{
+.discover{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;  
   background-image: url('../Assets/img/backGroundWhite.jpg');
-
 }
 
 .discover .cards__container{
@@ -189,11 +186,9 @@ body{
   flex-shrink: 0;
   width: 80%;
   flex-direction: column;
-  animation-name: cardOpacity;
-  animation-duration: 1.2s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
+  animation: cardOpacity 1.2s ease-in-out forwards;
   opacity: 0;
+
 }
 
 @keyframes cardOpacity{
@@ -310,6 +305,7 @@ body{
     font-weight: var(--light);
     color: var(--textBlack);
     margin-bottom: 20px;
+    opacity: 0.9;
   }
   
   .recipies__cards--info button:nth-child(4) {
@@ -421,21 +417,22 @@ body{
     flex-direction: column;
   }
 
-  .nav__content .nav__content--text h2{
+   .title{
     font-size: 2rem;
     text-align: center;
     color: var(--textBlack);
     
   }
 
-  .nav__content .nav__content--text span{
+  .subtitle{
     font-size: 1.4rem;
     margin-bottom: 16px;
     align-self: center;
+    text-align: center;
     color: var(--textBlack);
   }
 
-  .nav__content .nav__content--text p{
+  .desc{
     color: var(--textBlack);
     text-align: center;
   }
@@ -481,14 +478,11 @@ body{
   /*Hero header styles*/
 
   .hero__container{
-    height: 90%;
+    height: 100%;
     display: grid;
     place-items: center;
     width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 12px;
+    
   }
   .hero__text{
     
@@ -647,19 +641,18 @@ body{
 
   .main__button{
     justify-self: center;
-    width: 180px;
-    opacity: 0.5;
+    border-radius: 12px;
+    width: 215px;
     border: none;
-    padding: 8px 30px;
-    color: var(--textWhite);
-    background-color: var(--orangeTitle);
-    border-radius: 4px;
-    cursor:pointer;
-    font-size: 1.2rem;
-    font-weight: var(--medium);
     outline: none;
-    animation: buttonOpacity 1s ease-in-out forwards;
-    animation-delay: 4.5s;
+    background-color: var(--backgroundButtons);
+    padding: 6px 0;
+    color: var(--textWhite);
+    letter-spacing: 0.2rem;
+    align-self: center;
+    font-family: inherit;
+    cursor: pointer;
+    animation: buttonOpacity 1s ease-in-out 4.5s forwards;
     opacity: 0;
 
   }
@@ -680,5 +673,131 @@ body{
     color: var(--textBlack);
   }
 
+  .nav__button{
+    display: flex;
+    justify-content: center;
+  }
+
+  header .nav__button button{
+    margin-top: 20px;
+    border-radius: 12px;
+    width: 215px;
+    border: none;
+    outline: none;
+    background-color: var(--backgroundButtons);
+    padding: 6px 0;
+    align-self: center;
+    font-family: inherit;
+    cursor: pointer;
+    margin-bottom: 28px;
+    animation: buttonOpacity 1.6s ease-in-out 2.5s forwards;
+    opacity: 0;
+  }
+
+  @keyframes buttonOpacity{
+    from{
+      opacity: 0;
+
+    }
+    to{
+      opacity: 0.5;
+    }
+  }
+
+  header .nav__button button:hover{
+    opacity: 1 !important;
+  }
+
+  /*Values container*/
+
+  .love__container{
+    
+    padding: 16px 0;
+    background-image: url('../Assets/img/backgroundDesktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+
+  .love__hero{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0px 0px 16px 0px;
+    display: grid;
+  }
+
+  
+
+  .love__hero--left{
+    width: 100%;
+  }
+
+  .love__hero--icon{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Assets/img/heartNeon.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+  .love__cards{
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  .love__cards--content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    width: 90%;
+    margin: 0 auto;
+    gap: 16px;
+  }
+
+  .love__card{
+    padding: 12px 12px 20px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--orangeTitle);
+    cursor: pointer;
+    
+  }
+
+  .love__card:hover{
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
+
+  }
+
+  .love__card p:nth-child(1){
+    opacity: 0.8;
+    color: var(--orangeTitle);
+    font-size: 1rem;
+    font-weight: var(--Regular);
+    margin-bottom: 4px;
+
+  }
+
+  .love__card p:nth-child(2){
+    color: var(--textWhite);
+    font-size: 2.5rem;
+    font-weight: var(--bold);
+    margin-bottom: 4px;
+    
+  }
+
+  .love__card p:nth-child(3){
+    color: var(--textWhite);
+    font-size: 1.3rem;
+    font-weight: var(--light);
+    margin-bottom: 12px;
+    text-align: justify;
+    opacity: 0.8;
+  }
+
+  
+
+  
   
 

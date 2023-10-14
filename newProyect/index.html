@@ -21,7 +21,7 @@
     </section>
 
     <div class="intro__page">
-        <header>
+        <!-- <header>
             <nav class="nav">
                 <div class="nav__text">
                    <p>Otaku's</p>
@@ -37,7 +37,7 @@
                     <span class="shopping__cart"></span>
                 </ul>
             </nav>
-        </header>
+        </header> -->
     
         <section class="hero__container">
             <div class="hero__text">
@@ -92,204 +92,88 @@
 
             <div class="nav__content ">
                 <div class="nav__content--text">
-                    <h2>We give you the best </h2> 
-                    <span>Recipies Worldwide</span>
-                    <p>We provide you with the finest recipes from around the world. I'm here to give you a taste of global culinary excellence.</p>
+                    <h2 class="title">We give you the best </h2> 
+                    <span class="subtitle">Recipies Worldwide</span>
+                    <p class="desc">We provide you with the finest recipes from around the world. I'm here to give you a taste of global culinary excellence.</p>
                     <button class="exploreButton">Explore</button>
                 </div>
                 <span class="nav__content--image"></span>
 
             </div>
 
-            <section class="cards__container">
+            <section class="cards__container inactive">
                 
             </section>
 
-            
-
+            <div class="nav__button inactive">
+               <button class="valuesButton inactive">Our Values</button> 
+            </div>
         </header>
-    </section>
 
-    <script>
-
-const d = document;
-const mainButton = d.querySelector('.main__button');
-const firstSection = d.querySelector('.intro__page');
-const brandName = d.querySelector('.nav__text');
-const discoverSection = d.querySelector('.discover');
-const exploreButton = d.querySelector('.exploreButton')
-
-exploreButton.addEventListener('click', ()=>{
-    exploreButton.style.display = 'none'
-    renderCards(recipies)
-})
-
-
+        <section class="love__container  ">
+            <div class="love__hero plans__content">
+                <div class="love__hero--left">
+                    <p class=" title white">We create the best</p>
+                    <p class=" subtitle orange">For you</p>
+                    <p class=" desc white">For each recipe we make, we put love into it because things made with love are better. We deliver it to you because you are the best. Dare to cook with love.</p>
+                </div>
     
-// Reload the page when the brand name is clicked
-brandName.addEventListener('click', () => {
-    location.reload();
-});
-
-// Change button color on mouseover
-mainButton.addEventListener('mouseover', () => {
-    mainButton.style.background = '#EA6300';
-});
-
-mainButton.addEventListener('mouseout', () => {
-    mainButton.style.background = '#FE903F';
-});
-
-// Animate the first section and hide it when the main button is clicked
-mainButton.addEventListener('click', () => {
-    setTimeout(() => {
-        firstSection.classList.add('animate');
-    }, 100);
-
-    // Listen for the animation end event
-    firstSection.addEventListener('animationend', () => {
-        firstSection.classList.add('inactive'); // Hide the container once the animation is complete
-    });
-
-    discoverSection.classList.remove('inactive'); // Show the .parrafito paragraph
-});
-
-const recipies = []
-console.log(recipies)
-recipies.push(
-    {
-        img: '../Assets/img/recipeone.png',
-        subtitle: 'Delicious Korean stir-fry.',
-        title : 'JAPCHAE',
-        description : 'Sweet and savory Korean dish of beef, vegetables, and glass noodles stir-fried to perfection.',
-        buttonText: '$550 - ADD'
-
-    },
-    {
-        img: '../Assets/img/recipetwo.png',
-        subtitle: 'Colorful Korean bowl',
-        title : 'BIMBIMBAP',
-        description : 'Colorful Korean rice dish with assorted veggies, meat, and a spicy sauce; a true delight.',
-        buttonText: '$250 - ADD'
-
-    },
-    {
-        img: '../Assets/img/recipethree.png',
-        subtitle: 'Spicy Korean staple.',
-        title : 'KIMCHI',
-        description : 'Spicy, fermented cabbage with a tangy kick; a staple side dish in Korean cuisine.',
-        buttonText: '$600 - ADD'
-    },
-    {
-        img: '../Assets/img/recipefour.png',
-        subtitle: 'Tasty Korean grill.',
-        title : 'DALGALBI',
-        description : 'Spicy stir-fried chicken dish with vegetables; bursting with flavors and a popular choice.',
-        buttonText: '$800 - ADD'
-    },
-    {
-        img: '../Assets/img/recipefive.png',
-        subtitle: 'Savory Korean barbecue.',
-        title : 'BULGOGI',
-        description : 'Thinly sliced beef marinated in a flavorful sauce, grilled to tender perfection; a must-try BBQ dish.',
-        buttonText: '$215 - ADD'
-    },
-    {
-        img: '../Assets/img/recipesix.png',
-        subtitle: 'Korean grilled ribs.',
-        title : 'GALBI',
-        description : 'Grilled beef short ribs marinated in a mouthwatering sauce; an absolute favorite at Korean BBQ.',
-        buttonText: '$300 - ADD'
-    }
-
-)
-
-
-            /*<div class="recipies__cards--content">
-                    <div class="recipies__cards--hero"></div>
-                    <span class="recipies__cards--icon white__heart"></span>
-                    <span class="recipies__cards--recipe">
-                        <img class="recipies__cards--img" src="../Assets/img/recipetwo.png" alt="">
-                    </span>
-                    <div class="recipies__cards--info">
-                        <p>Delicious Korean stir-fry.</p>
-                        <p>JAPCHAE</p>
-                        <p>Sweet and savory Korean dish of beef, vegetables, and glass noodles stir-fried to perfection.</p>
-                        <button >$550 - ADD</button>
+                <span class="love__hero--icon"></span>
+            </div>
+    
+            
+    
+            <section class="love__cards">
+                <article class="love__cards--content">
+                   <div class="love__card">
+                        <p>Alway doing the right thing, even if you're not watching.</p>
+                        <p>INTEGRITY</p>
+                        <p>Always embracing quality ingredients, and creating flavors that resonate with authenticity.</p>
+                        
                     </div>
-            </div>*/
+                    <div class="love__card">
+                        <p>Building meaningful connections.</p>
+                        <p>HONESTY</p>
+                        <p>From farm to table, transparent sourcing and genuine flavors reflect a culinary tradition.</p>
+                        
+                    </div>
+    
+                    <div class="love__card">
+                        <p>The bedrock of unbreakable bonds.</p>
+                        <p>LOYALTY</p>
+                        <p>Nurturing ancestral recipes and staying true to traditional flavors, fostering a deep bond between generations.</p>
+                        
+                    </div>
+    
+                    <div class="love__card">
+                        <p>Fueling remarkable achievements.</p>
+                        <p>COMMITMENT</p>
+                        <p>Passionate dedication to preserving culinary traditions, embracing meticulous techniques.</p>
+                    </div>
+                    
+                </article>
 
-             function renderCards(arr){
-                for (recipie of recipies){
+                <article class="menu__container">
 
-                    /*Create elements and add classes*/
-                    const cardsContainer = d.querySelector('.cards__container')
-                    const recipieContent = d.createElement('div')
-                    recipieContent.classList.add('recipies__cards--content')
-                    const recipieHero = d.createElement('div')
-                    recipieHero.classList.add('recipies__cards--hero')
-                    const recipieIcon = d.createElement('span')
-                    recipieIcon.classList.add('recipies__cards--icon', 'white__heart')
-                    const recipieImageContainer = d.createElement('span')
-                    recipieImageContainer.classList.add('recipies__cards--recipe')
-                    const recipieImage = d.createElement('img')
-                    recipieImage.classList.add('recipies__cards--img')
-                    recipieImage.setAttribute('src', recipie.img)
-                    const recipieInfo = d.createElement('div')
-                    recipieInfo.classList.add('recipies__cards--info')
-                    const recipieInfoSubtitle = d.createElement('p')
-                    recipieInfoSubtitle.innerText = recipie.subtitle
-                    const recipieInfoTitle = d.createElement('p')
-                    recipieInfoTitle.innerText = recipie.title
-                    const recipieInfoDesc = d.createElement('p')
-                    recipieInfoDesc.innerText = recipie.description
-                    const recipieButton = d.createElement('button')
-                    recipieButton.innerText = recipie.buttonText
-
-                    /*Organize elements*/
-
-                    recipieInfo.appendChild(recipieInfoSubtitle)
-                    recipieInfo.appendChild(recipieInfoTitle)
-                    recipieInfo.appendChild(recipieInfoDesc)
-                    recipieInfo.appendChild(recipieButton)
-                    recipieImageContainer.appendChild(recipieImage)
-
-                    recipieContent.appendChild(recipieHero)
-                    recipieContent.appendChild(recipieIcon)
-                    recipieContent.appendChild(recipieImageContainer)
-                    recipieContent.appendChild(recipieInfo)
+                    <button class="menu__container--button">View menu</button>
 
                     
-                    cardsContainer.appendChild(recipieContent)
+                    <div class="menu__two"></div>
 
-                    /*Accessing to icons hearts*/
+                </article>
 
-                }
-
-                const recipiesContent = d.querySelectorAll('.recipies__cards--content');
-
-                for (let i = 0; i < recipiesContent.length; i++) {
-                    const element = recipiesContent[i];
-                    const dynamicClass = `recipe-${i + 1}`;
-                    element.classList.add(dynamicClass);
-                }
-
-
-                const hearts = document.querySelectorAll('.recipies__cards--icon');
-
-                    console.log(hearts)
-
-
-                    hearts.forEach((heart, index) => {
-                        heart.addEventListener('click', () => {
-                            heart.classList.toggle('orange__heart');
-                        });
-                    });
-              
-            }
-            
-            
-    </script>
+                
+                
+            </section>
     
+    
+            
+        </section>
+    </section>
+
+    
+
 </body>
+
+<script src="./index.js"></script>
 </html>

@@ -100,15 +100,15 @@
     background-size: contain;
   }
 
-  .nav__content .nav__content--text h2{
+  .title{
     font-size: 2.6rem;
   }
 
-  .nav__content .nav__content--text span{
+  .subtitle{
     font-size: 2rem;
   }
 
-  .nav__content .nav__content--text p{
+  .desc{
     font-size: 1rem;
   }
 
@@ -129,3 +129,9 @@
     padding: 30px 0 20px 0;
 
   } 
+
+  .love__hero{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  

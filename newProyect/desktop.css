@@ -48,16 +48,16 @@
     font-size: 1.6rem;
 }
 
-.nav__content .nav__content--text h2{
+.title{
     font-size: 3.8rem;
   }
 
-  .nav__content .nav__content--text span{
+  .subtitle{
     font-size: 2.8rem;
     
   }
 
-  .nav__content .nav__content--text p{
+  .desc{
     font-size: 1.8rem;
   }
 
@@ -74,3 +74,40 @@
   .recipies__cards--content{
     width: 100%;
   }
+
+  .recipies__cards--icon{
+    width: 24px;
+    height: 24px;
+  }
+
+  .recipies__cards--recipe{
+    width: 140px;
+    height: 140px;
+  }
+
+  .recipies__cards--info p:nth-child(1), .love__card p:nth-child(1){
+    font-size: 1.3rem;
+
+  }
+  .recipies__cards--info p:nth-child(2), .love__card p:nth-child(2){
+    font-size: 2.8rem;
+
+  }
+  .recipies__cards--info p:nth-child(3), .love__card p:nth-child(3){
+    font-size: 1.6rem;
+
+  }
+  .recipies__cards--info button:nth-child(4){
+    font-size: 1.5rem;
+
+  }
+
+  .valuesButton,.main__button {
+    font-size: 1.8rem;
+   
+  }
+
+  
+  
+
+  
