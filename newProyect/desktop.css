@@ -107,6 +107,18 @@
    
   }
 
+  /*Menu*/
+
+  .menu__one{
+    width: 30%;
+  }
+
+ .menu__button button{
+  font-size: 1.8rem;
+ }
+
+ 
+
   
   
 

@@ -765,7 +765,7 @@ body{
     
   }
 
-  .love__card:hover{
+  .love__card:hover , .menu__one:hover{
     box-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
 
   }
@@ -795,6 +795,228 @@ body{
     text-align: justify;
     opacity: 0.8;
   }
+
+  /*Menu*/
+
+  .menu__container{
+    margin-top: 40px;
+  }
+
+  .menu__button{
+    width: 100%;
+  }
+
+  .menu__one{
+    width: 90%;
+    height: auto;
+    margin: 40px auto;
+    border-radius: 12px;
+    padding: 12px 16px;
+    border: 1px solid var(--orangeTitle);
+    cursor: pointer;
+    animation: menuOpacity 1.2s ease-out 0.3s forwards;
+    opacity: 0;
+
+}
+
+@keyframes menuOpacity{
+  from{
+    opacity: 0;
+
+  }
+
+  to{
+    opacity: 1;
+
+  }
+}
+
+
+
+.menu__header{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.menu__header--text{
+    display: flex;
+    align-items: center;
+}
+
+.plate__description{
+    width: 100%;
+}
+
+.menu__header--text .menu__header--title{
+    font-size: 4rem;
+    margin-right: 10px;
+    color:#EA6300;
+    left: 0.5rem;
+    
+}
+
+.menu__header--text .menu__header--subtitle{
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 0.2rem;
+    margin-left: 8px;
+}
+
+.menu__content .plate__title{
+    font-size: 2.8rem;
+    letter-spacing: 0.4rem;
+    color:#EA6300;
+    margin: 0;
+    
+}
+
+.menu__content .plate__name{
+    display: flex;
+    align-items: center;
+}
+
+.menu__content .plate__name > p{
+    font-size: 2rem;
+    color:#EA6300;
+    margin-right: 12px;
+    opacity: 0.8;
+}
+
+.plate__name .plate__name--price{
+    display: flex;
+    
+}
+
+.plate__name .plate__name--price p:first-child{
+    opacity: 0.5;
+    color: white;
+    font-size: 2rem;
+    margin-right: 6px;
+}
+
+.plate__name .plate__name--price p:last-child{
+    font-size: 1.5rem;
+    color:#EA6300;
+    opacity: 0.9;
+    top: 4px;
+    letter-spacing: 0.1rem;
+}
+
+.menu__content .plate__description{
+   margin: 0;
+   color: white;
+   opacity: 0.6;
+   
+   font-weight: thin;
+}
+
+.menu__button , .menu__visit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu__button button , .menu__visit button{
+    width: 215px;
+    border: none;
+    outline: none;
+    background-color: #EA6300;
+    padding: 6px 0;
+    color: white;
+    letter-spacing: 0.2rem;
+    border-radius: 12px;
+    opacity: 0.5;
+    cursor: pointer;
+    font-family: inherit;
+    
+    
+}
+
+.menu__button button:hover , .menu__visit button:hover{
+    opacity: 1;
+}
+
+
+.menu__hamburguer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.hamburguerOne, .hamburguerTwo, .hamburguerThree{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+
+
+}
+
+.hamburguerOne {
+    background-image: url('../Assets/img/recipeone.png');
+    top: -25px;
+    left: 10px;
+    
+
+
+}
+
+.hamburguerTwo {
+    
+    background-image: url('../Assets/img/recipetwo.png');
+    top: -4px;
+   
+    
+}
+
+.hamburguerThree {
+    top: 12px;
+    left: 10px;
+    background-image: url('../Assets/img/recipethree.png');
+    
+}
+.menu__containerOne{
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 8px;
+}
+
+.breakfastOne{
+    grid-column: 1 / 2;
+    
+}
+
+.breakfastTwo{
+    grid-row: 2 / 3;
+}
+
+.breakfastThree{
+    grid-row: 3 / 4;
+}
+
+.breakfast{
+    margin-top: 20px;
+}
+
+.lunch, .dinner{
+    margin-top: 45px;
+}
+
+.visit{
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+
 
   
 

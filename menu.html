@@ -23,10 +23,15 @@
             padding: 0;
             margin: 0;
         }
+
+        
         .menu__one{
-            width: 80%;
+            width: 90%;
             height: auto;
-            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px auto;
             border-radius: 12px;
             padding: 12px 16px;
             background-color: rgb(40, 40, 40);
@@ -45,53 +50,42 @@
         }
 
         .plate__description{
-            width: 70%;
+            width: 100%;
         }
 
         .menu__header--text .menu__header--title{
             font-size: 4rem;
             margin-right: 10px;
-            color: rgb(208, 148, 36);
+            color:#EA6300;
             left: 0.5rem;
-            position: relative;
-            top: -40px;
+            
         }
 
         .menu__header--text .menu__header--subtitle{
             font-size: 2rem;
-            position: relative;
-            top: -36px;
             color: white;
             letter-spacing: 0.2rem;
             margin-left: 8px;
         }
 
-        .menu__breakfast{
-            position: relative;
-            top: -60px;
-        }
-
-        
-
-        .menu__breakfast .plate__title{
+        .menu__content .plate__title{
             font-size: 2.8rem;
             letter-spacing: 0.4rem;
-            color: rgb(208, 148, 36);
+            color:#EA6300;
             margin: 0;
-            position: relative;
-            left: 12px;
+            
         }
 
-        .menu__breakfast .plate__name{
+        .menu__content .plate__name{
             display: flex;
             align-items: center;
         }
 
-        .menu__breakfast .plate__name > p{
+        .menu__content .plate__name > p{
             font-size: 2rem;
-            color: rgb(208, 148, 36);
+            color:#EA6300;
             margin-right: 12px;
-            opacity: 0.9;
+            opacity: 0.8;
         }
 
         .plate__name .plate__name--price{
@@ -108,35 +102,124 @@
 
         .plate__name .plate__name--price p:last-child{
             font-size: 1.5rem;
-            color: rgb(208, 148, 36);
-            position: relative;
+            color:#EA6300;
             opacity: 0.9;
             top: 4px;
             letter-spacing: 0.1rem;
         }
 
-        .menu__breakfast .plate__description{
+        .menu__content .plate__description{
            margin: 0;
            color: white;
            opacity: 0.6;
-           position: relative;
-           top: -15px;
+           
            font-weight: thin;
         }
 
-        .menu__desc{
-            position: relative;
+        .menu__button{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu__button button{
+            width: 215px;
+            border: none;
+            outline: none;
+            background-color: #EA6300;
+            padding: 6px 0;
+            color: white;
+            letter-spacing: 0.2rem;
+            border-radius: 12px;
+            opacity: 0.5;
+            cursor: pointer;
+            font-family: inherit;
+            
+            
+        }
+
+        .menu__button button:hover{
+            opacity: 1;
+        }
+
+        
+        .menu__hamburguer {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        
+        }
+
+        .hamburguerOne, .hamburguerTwo, .hamburguerThree{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+           
+        
+
+        }
+
+        .hamburguerOne {
+            background-image: url('./Assets/img/recipeone.png');
+            top: -25px;
+            left: 10px;
+            
+        
+
+        }
+
+        .hamburguerTwo {
+            
+            background-image: url('./Assets/img/recipetwo.png');
             top: -4px;
+           
+            
         }
 
-         .two{
-            top: -26px;
+        .hamburguerThree {
+            top: 12px;
+            left: 10px;
+            background-image: url('./Assets/img/recipethree.png');
+            
+        }
+        .menu__containerOne{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
         }
 
-        .three{
-            top: -44px;
+        .breakfastOne{
+            grid-column: 1 / 2;
+            
         }
 
+        .breakfastTwo{
+            grid-row: 2 / 3;
+        }
+
+        .breakfastThree{
+            grid-row: 3 / 4;
+        }
+
+        .breakfast{
+            margin-top: 20px;
+        }
+
+        .lunch, .dinner{
+            margin-top: 45px;
+        }
+
+        .menu__button{
+            margin-top: 40px;
+        }
+        
+
+        
+        
         
 
         
@@ -153,124 +236,175 @@
             
         </div>
 
+        <div class="menu__plates">
+            <div class="menu__content breakfast">
+                <h2 class="plate__title">Breakfast</h2>
+
+                <div class="menu__containerOne">
+
+                    <div class="menu__desc breakfastOne">
+                        <div class="plate__name">
+                            <p>Haejangguk</p>
+                            <div class="plate__name--price">
+                                <p>$</p>
+                                <p>50.00</p>
+                            </div>
+                        </div>
+                        <p class="plate__description">hearty soup features tender beef or pork, a medley of fresh vegetables, silky tofu, and a rich pork broth. sautéed vegetables like green onions. </p>
+                    </div>
+    
+                    <div class="menu__desc breakfastTwo ">
+                        <div class="plate__name">
+                            <p>Gyeran</p>
+                            <div class="plate__name--price">
+                                <p>$</p>
+                                <p>75.00</p>
+                            </div>
+                        </div>
+                        <p class="plate__description">golden omelet is expertly crafted with farm-fresh eggs, a touch of salt, and a colorful mix of sautéed vegetables like green onions, carrots, and spinach. </p>
+                    </div>
+    
+                    <div class="menu__desc breakfastThree">
+                        <div class="plate__name">
+                            <p>Bibimbap</p>
+                            <div class="plate__name--price">
+                                <p>$</p>
+                                <p>95.00</p>
+                            </div>
+                        </div>
+                        <p class="plate__description">delightful harmony of sautéed vegetables, your choice of succulent beef or pork, fiery chili paste, soybean paste, and a crown of a perfectly</p>
+                    </div>
+
+                    <div class="menu__hamburguer">
+                        <span class="hamburguerOne"></span>
+                    </div>
+
+                    <div class="menu__hamburguer">
+                        <span class="hamburguerTwo"></span>
+                    </div>
+                    
+                    <div class="menu__hamburguer">
+                        <span class="hamburguerThree"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="menu__content  lunch">
+                <h2 class="plate__title">Lunch</h2>
+
+                <div class="menu__containerOne">
+
+                    <div class="menu__desc breakfastOne">
+                        <div class="plate__name">
+                            <p>Bulgogi </p>
+                            <div class="plate__name--price">
+                                <p>$</p>
+                                <p>25.99</p>
+                            </div>
+                        </div>
+                        <p class="plate__description">Savor the mouthwatering flavors of Bulgogi, a Korean lunchtime favorite. Thinly sliced marinated beef or pork is grilled to perfection, offering a sweet and savory profile.</p>
+                    </div>
+    
+                    <div class="menu__desc breakfastTwo ">
+                        <div class="plate__name">
+                            <p>Japchae</p>
+                            <div class="plate__name--price">
+                                <p>$</p>
+                                <p>64.99</p>
+                            </div>
+                        </div>
+                        <p class="plate__description">Experience the exquisite taste of Japchae, a Korean stir-fried noodle dish. Delicate glass noodles are wok-tossed with an array of colorful vegetables. </p>
+                    </div>
+    
+                    <div class="menu__desc breakfastThree">
+                        <div class="plate__name">
+                            <p>Dolsot</p>
+                            <div class="plate__name--price">
+                                <p>$</p>
+                                <p>18.99</p>
+                            </div>
+                        </div>
+                        <p class="plate__description">Delight in our Dolsot Bibimbap, a hot stone bowl masterpiece. A satisfying combination of sautéed vegetables, delectable beef or pork, fiery chili paste.</p>
+                    </div>
+
+                    <div class="menu__hamburguer">
+                        <span class="hamburguerOne"></span>
+                    </div>
+
+                    <div class="menu__hamburguer">
+                        <span class="hamburguerTwo"></span>
+                    </div>
+                    
+                    <div class="menu__hamburguer">
+                        <span class="hamburguerThree"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="menu__content dinner">
+                <h2 class="plate__title">Dinner</h2>
+
+                <div class="menu__containerOne">
+
+                    <div class="menu__desc breakfastOne">
+                        <div class="plate__name">
+                            <p>Samgyeopsal</p>
+                            <div class="plate__name--price">
+                                <p>$</p>
+                                <p>84.58</p>
+                            </div>
+                        </div>
+                        <p class="plate__description">Savor the delectable Samgyeopsal, a Korean barbecue sensation. Thin slices of pork belly are grilled to perfection, creating a sumptuous, savory delight. </p>
+                    </div>
+    
+                    <div class="menu__desc breakfastTwo ">
+                        <div class="plate__name">
+                            <p>Guksu</p>
+                            <div class="plate__name--price">
+                                <p>$</p>
+                                <p>55.25</p>
+                            </div>
+                        </div>
+                        <p class="plate__description">Delight in the vibrant flavors of Bibim Guksu, a Korean cold noodle dish. Chewy wheat noodles are tossed in a zesty gochujang-based sauce. </p>
+                    </div>
+    
+                    <div class="menu__desc breakfastThree">
+                        <div class="plate__name">
+                            <p>Haemul</p>
+                            <div class="plate__name--price">
+                                <p>$</p>
+                                <p>78.54</p>
+                            </div>
+                        </div>
+                        <p class="plate__description">Experience the savory Haemul Pajeon, a Korean seafood pancake. A crispy, golden-brown pancake loaded with a variety of fresh seafood, scallions.</p>
+                    </div>
+
+                    <div class="menu__hamburguer">
+                        <span class="hamburguerOne"></span>
+                    </div>
+
+                    <div class="menu__hamburguer">
+                        <span class="hamburguerTwo"></span>
+                    </div>
+                    
+                    <div class="menu__hamburguer">
+                        <span class="hamburguerThree"></span>
+                    </div>
+
+                </div>
+
+            </div>
 
         
-        <div class="menu__breakfast">
-            <h2 class="plate__title">Breakfast</h2>
-            <div class="menu__desc">
-                <div class="plate__name">
-                    <p>Balgachi</p>
-                    <div class="plate__name--price">
-                        <p>$</p>
-                        <p>50.00</p>
-                    </div>
-                </div>
-                <p class="plate__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae harum architecto reiciendis, ratione magnam ex </p>
+            <div class="menu__button">
+                <button>Visit us</button>
             </div>
 
-            <div class="menu__desc two ">
-                <div class="plate__name">
-                    <p>Balgachi</p>
-                    <div class="plate__name--price">
-                        <p>$</p>
-                        <p>50.00</p>
-                    </div>
-                </div>
-                <p class="plate__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae harum architecto reiciendis, ratione magnam ex </p>
-            </div>
-
-            <div class="menu__desc three">
-                <div class="plate__name">
-                    <p>Balgachi</p>
-                    <div class="plate__name--price">
-                        <p>$</p>
-                        <p>50.00</p>
-                    </div>
-                </div>
-                <p class="plate__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae harum architecto reiciendis, ratione magnam ex </p>
-            </div>
-            
-        </div>
-
-        <div class="menu__breakfast">
-            <h2 class="plate__title">Breakfast</h2>
-            <div class="menu__desc">
-                <div class="plate__name">
-                    <p>Balgachi</p>
-                    <div class="plate__name--price">
-                        <p>$</p>
-                        <p>50.00</p>
-                    </div>
-                </div>
-                <p class="plate__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae harum architecto reiciendis, ratione magnam ex </p>
-            </div>
-
-            <div class="menu__desc two ">
-                <div class="plate__name">
-                    <p>Balgachi</p>
-                    <div class="plate__name--price">
-                        <p>$</p>
-                        <p>50.00</p>
-                    </div>
-                </div>
-                <p class="plate__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae harum architecto reiciendis, ratione magnam ex </p>
-            </div>
-
-            <div class="menu__desc three">
-                <div class="plate__name">
-                    <p>Balgachi</p>
-                    <div class="plate__name--price">
-                        <p>$</p>
-                        <p>50.00</p>
-                    </div>
-                </div>
-                <p class="plate__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae harum architecto reiciendis, ratione magnam ex </p>
-            </div>
-            
-        </div>
-
-        <div class="menu__breakfast">
-            <h2 class="plate__title">Breakfast</h2>
-            <div class="menu__desc">
-                <div class="plate__name">
-                    <p>Balgachi</p>
-                    <div class="plate__name--price">
-                        <p>$</p>
-                        <p>50.00</p>
-                    </div>
-                </div>
-                <p class="plate__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae harum architecto reiciendis, ratione magnam ex </p>
-            </div>
-
-            <div class="menu__desc two ">
-                <div class="plate__name">
-                    <p>Balgachi</p>
-                    <div class="plate__name--price">
-                        <p>$</p>
-                        <p>50.00</p>
-                    </div>
-                </div>
-                <p class="plate__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae harum architecto reiciendis, ratione magnam ex </p>
-            </div>
-
-            <div class="menu__desc three">
-                <div class="plate__name">
-                    <p>Balgachi</p>
-                    <div class="plate__name--price">
-                        <p>$</p>
-                        <p>50.00</p>
-                    </div>
-                </div>
-                <p class="plate__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae harum architecto reiciendis, ratione magnam ex </p>
-            </div>
-            
-        </div>
-
-        <button>HOLA</button>
-
-   
-       
-        
+        </div>     
     </div>
 </body>
 </html>

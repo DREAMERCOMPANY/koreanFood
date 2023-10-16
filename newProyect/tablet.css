@@ -134,4 +134,51 @@
     grid-template-columns: repeat(2,1fr);
   }
 
+  /*Menu*/
+
+  .menu__header--text .menu__header--title {
+    font-size: 4.5rem;
+
+  }
+
+.menu__header--text .menu__header--subtitle{
+  font-size: 2.5rem;
+  top: 4px;
+  position: relative;
+
+}
+
+.menu__content .plate__title{
+  font-size: 3.8rem;
+
+}
+
+.menu__content .plate__name > p{
+  font-size: 2rem;
+
+}
+
+.plate__name .plate__name--price p:first-child{
+  font-size: 1.8rem;
+
+}
+
+.plate__name .plate__name--price p:last-child{
+  font-size: 1.4rem;
+  position: relative;
+  top: -4px;
+
+}
+
+.menu__content .plate__description{
+  font-size: 1.2rem;
+  margin-top: 4px;
+
+}
+
+.menu__one{
+  width: 70%;
+}
+
+
   

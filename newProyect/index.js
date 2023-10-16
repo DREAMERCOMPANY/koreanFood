@@ -4,6 +4,8 @@ const firstSection = d.querySelector('.intro__page');
 const brandName = d.querySelector('.nav__text');
 const discoverSection = d.querySelector('.discover');
 const exploreButton = d.querySelector('.exploreButton')
+const buttonMenu = d.querySelector('.menu__button')
+const menu = d.querySelector('.menu__one')
 /* const navButton = d.getElementsByClassName('valuesButton')[0]
 const loveContainer = d.querySelector('.love__container')
 
@@ -20,6 +22,9 @@ navButton.addEventListener('click', ()=>{
 
 }) */
 
+buttonMenu.addEventListener('click', ()=>{
+    menu.classList.remove('inactive')
+})
 exploreButton.addEventListener('click', ()=>{
     exploreButton.style.display = 'none'
     renderCards(recipies)
