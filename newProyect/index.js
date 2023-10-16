@@ -8,6 +8,9 @@ const buttonMenu = d.querySelector('.menu__button')
 const menu = d.querySelector('.menu__one')
 const menuText = d.querySelector('.menu__view')
 const visit = d.querySelector('.menu__visit')
+const commentButton = d.querySelector('#comments')
+const commentSection = d.querySelector('.learn__experience')
+const learnCards = d.querySelectorAll('.learn__card--item')
 /* const navButton = d.getElementsByClassName('valuesButton')[0]
 const loveContainer = d.querySelector('.love__container')
 
@@ -23,6 +26,54 @@ navButton.addEventListener('click', ()=>{
    
 
 }) */
+
+
+
+function showHideComments(){
+    const viewComment = commentButton.innerText == 'View comments';
+    const hideComment = commentButton.innerText == 'Hide comments';
+
+    if (viewComment) {
+        commentButton.innerText = "Hide comments";
+    
+        for (let i = 0; i < learnCards.length; i++) {
+            const delay = i * 0.5; // Ajusta el valor de retraso según tus preferencias
+            learnCards[i]
+            learnCards[i].style.opacity = 0;
+            learnCards[i].style.animation = `fadeIn 1s ease-in forwards ${delay}s`;
+        }
+    }
+    
+
+    if (hideComment) {
+        commentButton.innerText = "View comments";
+    
+        let animationsCompleted = 0;
+    
+        for (let i = learnCards.length - 1; i >=0; i--) {
+            const delay = (learnCards.length - i - 1) * 0.5
+
+            learnCards[i].style.opacity = 1;
+            learnCards[i].style.animation = `fadeOut 1s ease-in-out  forwards ${delay}s`;
+    
+            learnCards[i].addEventListener('animationend', () => {
+                animationsCompleted++;
+    
+                if (animationsCompleted === learnCards.length) {
+                    // Todas las animaciones 'fadeOut' han terminado
+                    commentSection.classList.add('inactive');
+                }
+            });
+        }
+    }
+    
+
+    commentSection.classList.remove('inactive');
+
+}
+
+
+commentButton.addEventListener('click', showHideComments)
 
 
 buttonMenu.addEventListener('click', ()=>{
