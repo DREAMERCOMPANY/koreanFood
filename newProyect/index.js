@@ -6,6 +6,8 @@ const discoverSection = d.querySelector('.discover');
 const exploreButton = d.querySelector('.exploreButton')
 const buttonMenu = d.querySelector('.menu__button')
 const menu = d.querySelector('.menu__one')
+const menuText = d.querySelector('.menu__view')
+const visit = d.querySelector('.menu__visit')
 /* const navButton = d.getElementsByClassName('valuesButton')[0]
 const loveContainer = d.querySelector('.love__container')
 
@@ -22,9 +24,20 @@ navButton.addEventListener('click', ()=>{
 
 }) */
 
+
 buttonMenu.addEventListener('click', ()=>{
-    menu.classList.remove('inactive')
+    menu.classList.toggle('inactive')
+    const showMenu = menuText.innerText == 'View menu'
+
+    if(showMenu){
+        menuText.innerText = 'Hide menu'
+    } else{
+        menuText.innerText = 'View menu'
+    }
+     
 })
+
+
 exploreButton.addEventListener('click', ()=>{
     exploreButton.style.display = 'none'
     renderCards(recipies)
@@ -36,7 +49,17 @@ exploreButton.addEventListener('click', ()=>{
     
 })
 
-
+visit.addEventListener('click', ()=>{
+     // Dirección que deseas abrir en Google Maps
+     var direccion = "cll 72 # 54-80";
+    
+     // URL personalizada para abrir Google Maps con la dirección
+     var url = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(direccion);
+     console.log(url)
+ 
+     // Abre Google Maps en una nueva ventana o pestaña del navegador
+     window.open(url, "_blank");
+})
     
 // Reload the page when the brand name is clicked
 brandName.addEventListener('click', () => {

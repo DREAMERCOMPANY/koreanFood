@@ -770,7 +770,7 @@ body{
 
   }
 
-  .love__card p:nth-child(1){
+  .love__card .subtitleCard{
     opacity: 0.8;
     color: var(--orangeTitle);
     font-size: 1rem;
@@ -779,7 +779,7 @@ body{
 
   }
 
-  .love__card p:nth-child(2){
+  .love__card .titleCard{
     color: var(--textWhite);
     font-size: 2.5rem;
     font-weight: var(--bold);
@@ -787,7 +787,7 @@ body{
     
   }
 
-  .love__card p:nth-child(3){
+  .love__card .descCard{
     color: var(--textWhite);
     font-size: 1.3rem;
     font-weight: var(--light);
@@ -1015,6 +1015,220 @@ body{
     margin-top: 40px;
     margin-bottom: 15px;
 }
+
+/*Learn content*/
+
+.recipies__learn{
+  background-image: url('../Assets/img/backGroundWhite.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:16px 0 ;
+}
+
+
+.recipies__experts--hero{
+  text-align: center;
+  letter-spacing: 0.2rem;
+  margin-bottom: 4px;
+}
+
+/* .recipies__experts span:nth-child(1){
+  color: var(--textWhite);
+  font-size: 2rem;
+  font-weight: var(--medium);
+
+}
+
+.recipies__experts span:nth-child(2){
+  color: var(--orangeTitle);
+  font-size: 2rem;
+  font-weight: var(--medium);
+  
+}
+
+.recipies__experts span:nth-child(3){
+  color: var(--textWhite);
+  font-size: 2rem;
+  font-weight: var(--medium);
+  
+}
+
+.recipies__experts p:nth-child(4){
+  color: var(--textWhite);
+  font-size: 2rem;
+  font-weight: var(--medium);
+}
+
+.recipies__experts--text{
+  opacity: 0.6;
+  text-align: justify;
+  font-size: 1.3rem;
+  font-weight: var(--light);
+  margin-bottom: 8px;
+  color: var(--textWhite);
+} */
+
+
+
+.learn__container{
+  width: 100%;
+  background-color: var(--backgroundBlack);
+}
+
+.recipies__learn--hero{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  width: 90%;
+  margin: 0 auto 40px auto;
+}
+
+.recipies__learn .menu__button .menu__view{
+  color: var(--textBlack);
+}
+
+.recipies__experts {
+  border: none; /* Quitar el borde */
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 12px 12px 20px 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.1); /* Agregar un box shadow similar al de Google */
+  cursor: pointer;
+  transition:box-shadow  0.3s;
+}
+
+.recipies__experts:hover{
+  box-shadow: 0 4px 6px rgba(234, 99, 0, 0.5), 0 1px 3px rgba(234, 99, 0, 0.6);
+}
+
+/* .recipies__experts:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.1)
+} */
+
+
+.learn__content{
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+
+
+/* .learn__text:hover{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.1)
+
+} */
+/* .learn__text p:first-child{
+  opacity: 0.8;
+  color: var(--textWhite);
+  text-align: center;
+  margin-bottom: 4px;
+  font-weight: var(--medium);
+  font-size: 2rem;
+}
+
+.learn__text p:first-child span{
+  color: var(--orangeTitle);
+}
+
+.learn__text p:last-child{
+  opacity: 0.6;
+  text-align: justify;
+  font-size: 1.3rem;
+  font-weight: var(--light);
+  margin-bottom: 8px;
+  color: var(--textWhite);
+}
+ */
+
+
+.learn__experience{
+  margin-top: 12px;
+  display: grid;
+  width: 90%;
+  margin: 20px auto;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+}
+
+/* .learn__experience--text{
+  text-align: center;
+}
+
+ .learn__experience--text p span{
+  color: var(--orangeTitle);
+}
+
+.learn__experience--text p{
+  opacity: 0.8;
+  color: var(--textWhite);
+  font-weight: var(--medium);
+  font-size: 2rem;
+}  */
+
+
+
+.learn__card--item {
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 12px 12px 20px 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+  
+}
+
+.learn__card--item:hover{
+  box-shadow: 0 4px 6px rgba(234, 99, 0, 0.5), 0 1px 3px rgba(234, 99, 0, 0.6);
+
+}
+
+
+.learn__card--item p:nth-child(1){
+  color: var(--orangeTitle);
+  font-size: 1rem;
+  margin-bottom: 4px;
+
+}
+
+ .learn__card--item p:nth-child(2){
+  color: var(--textBlack);
+  font-weight: var(--medium);
+  font-size: 2.5rem;
+  margin-bottom: 4px;
+  
+} 
+
+.learn__card--item p:nth-child(3){
+  text-align: justify;
+  font-size: 1.3rem;
+  font-weight: var(--light);
+  color: var(--textBlack);
+} 
+
+.recipies__learn .nav__content{
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  margin-bottom: 40px;
+  place-items: center;
+}
+
+.nav__recipieImg{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Assets/img/chefExpert.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
 
 
 

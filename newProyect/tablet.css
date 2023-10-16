@@ -180,5 +180,9 @@
   width: 70%;
 }
 
+.recipies__learn .nav__content{
+  grid-template-columns: repeat(2,1fr);
+}
+
 
   
