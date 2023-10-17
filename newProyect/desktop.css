@@ -131,6 +131,73 @@
   font-size: 1.6rem;
 } 
 
+/*Plans content*/
+
+
+
+
+
+.plans__card--hero p:nth-child(1){
+  font-size: 2rem;
+
+}
+.plans__card--hero p:nth-child(2){
+  font-size: 4rem;
+
+}
+
+.plans__card--hero p:nth-child(3),.plans__card--hero p:nth-child(4),.plans__card--hero p:nth-child(5) {
+  font-size: 1.3rem;
+}
+
+.plans__card--desc p {
+  font-size: 1.4rem;
+
+}
+.plans__button{
+  font-size: 1.5rem;
+} 
+
+@media(min-width: 1700px){
+  .plans__pocket , .plans__info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+  }
+
+  .plans__pocket--icon , .plans__info--icon{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .plans__pocket--icon{
+    background-image: url('../Assets/img/budgetOne.png');
+  }
+
+  .plans__info--icon{
+    background-image: url('../Assets/img/budgetTwo.png');
+  }
+
+  .plans__cards{
+    justify-content: center;
+    width: 50%;
+    gap: 16px;
+  }
+  
+  .plans__card{
+    width: 100%;
+    margin: 0 auto;
+    
+  
+  }
+  
+}
+
+
 
   
 

@@ -184,5 +184,13 @@
   grid-template-columns: repeat(2,1fr);
 }
 
+/*Plans section*/
+
+ .plans__content{
+  grid-template-columns: repeat(2,1fr);
+}
+
+
+
 
   

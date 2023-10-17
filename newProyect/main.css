@@ -1252,6 +1252,251 @@ body{
   background-size: contain;
 }
 
+/*Plans container*/
+
+.plans__container{
+  width: 100%;
+  padding: 16px 0;
+}
+
+.plans__content{
+  width: 90%;
+  display: grid;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 16px;
+}
+
+
+
+
+
+
+
+
+/* .plans--title{
+  opacity: 0.8;
+  font-size: 2rem;
+  font-weight: var(--medium);
+  letter-spacing: 0.2rem;
+}
+
+.plans--subtitle{
+  opacity: 0.8;
+  font-size: 1.6rem;
+  font-weight: var(--Regular);
+  margin-bottom: 4px;
+  line-height: 1.6rem;
+  
+  
+}
+
+.plans--desc{
+  opacity: 0.6;
+  font-size: 1.3rem;
+  width: 85%;
+  font-weight: var(--light);
+  text-align: justify;
+} */
+
+
+/* .plans__pocket--right{
+
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  gap: 4px;
+  justify-content: end;
+}
+
+.plans__pocket--right-text{
+  text-align: center;
+}
+
+
+.plans__pocket--right span{
+  rotate: 180deg;
+} */
+
+
+.plans__container {
+  width: 100%;
+  height: auto;
+  background: url('../Assets/img/backgroundDesktop.jpg') center/cover no-repeat;
+}
+
+.plans__description--left p:first-child{
+  margin-bottom: 4px;
+}
+
+ .plans__cards{
+
+  width: 90%;
+  margin: 12px auto;
+  padding: 8px 8px;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+
+
+
+
+.plans__card{
+
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+  background: url('../Assets/img/backGroundWhite.jpg') center/cover no-repeat;
+
+} 
+
+
+
+
+.plans__card--hero{
+   border-radius: 8px;
+   padding: 12px 12px 16px 12px;
+   color: var(--textBlack);
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+}
+
+.plans__card--hero p:nth-child(2){
+  font-weight: var(--bold);
+  font-size: 3.8rem;
+  letter-spacing: 0.2rem;
+  line-height: 2.8rem;
+}
+
+.plans__card--hero p:nth-child(1){
+  font-weight: var(--bold);
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 16px;
+
+}
+
+.plans__card--hero p:nth-child(3){
+  font-weight: var(--light);
+  font-size: 1.2rem;
+  
+  
+}
+
+.plans__card--desc{
+  padding: 16px 12px 12px 12px;
+}
+
+.plans__card--desc p{
+  display: flex;
+  align-items: center;
+  gap: 8px;  
+  margin-bottom: 4px;  
+  color: var(--textBlack);
+  font-weight: var(--Regular);
+  font-size: 1.2rem;
+}
+
+.plans__card--desc p::before{
+  
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url('../Assets/icons/checkplans.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  vertical-align: middle;
+  
+}
+
+.plans__button{
+  align-self: center;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  border-radius:40px;
+  width: 60%;
+  padding: 8px 0;
+  cursor: pointer;
+  color: var(--textBlack);
+  font-size: 1.2rem;
+  font-weight: var(--bold);
+  font-family: inherit;
+  letter-spacing: 0.1rem;
+  opacity: 0.7;
+}
+
+.plans__button:hover{
+  opacity: 1;
+}
+
+.plans__card--price{
+  display: flex;
+  color: var(--textBlack);
+  align-items: center;
+  
+}
+
+.plans__card--price p:nth-child(1){
+  font-size: 14px;
+  font-weight: var(--medium);
+  position: relative;
+  top: 7px;
+
+
+}
+
+.plans__card--price p:nth-child(2){
+  font-size: var(--H1);
+  font-weight: var(--bold);
+  
+}
+
+.plans__card--price p:nth-child(3){
+  font-size: 12px;
+  font-weight: var(--medium);
+  position: relative;
+  left: 2px;
+  bottom: 9px;
+  
+}
+
+
+.plans__card--price p:nth-child(4){
+  font-size: var(--H3);
+  font-weight: var(--medium);
+  position: relative;
+  top: 2px;
+  
+}
+
+.plans__card--price p:nth-child(5){
+  font-size: var(--PLight);
+  font-weight: var(--light);
+  position: relative;
+  left: 2px;
+  top: 4px;
+  
+}
+
+/* .plans__container .menu__button .menu__view{
+  color: var(--textBlack);
+} */
+
 
 
 
