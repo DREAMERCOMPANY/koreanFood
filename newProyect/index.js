@@ -13,6 +13,8 @@ const learnCards = d.querySelectorAll('.learn__card--item')
 const planButton = d.querySelector('#plans__button')
 const planContainer = d.querySelector('.plans__cards')
 const planCards = d.querySelectorAll('.plans__card')
+const footerInput = d.querySelector('.footer__up--input')
+const footerBtn = d.querySelector('.footer__up--button')
 /* const navButton = d.getElementsByClassName('valuesButton')[0]
 const loveContainer = d.querySelector('.love__container')
 
@@ -29,7 +31,14 @@ navButton.addEventListener('click', ()=>{
 
 }) */
 
-
+footerInput.addEventListener('input', ()=>{
+    
+    if(footerInput.value == ''){
+        footerBtn.classList.add('inactive')
+    }else{
+        footerBtn.classList.remove('inactive')
+    }
+})
 
 function showHideComments(actionButton, initial, final, arr, container) {
     const viewComment = actionButton.innerText == initial;
@@ -72,7 +81,12 @@ function showHideComments(actionButton, initial, final, arr, container) {
 
 commentButton.addEventListener('click',()=> showHideComments(commentButton, 'View comments', 'Hide comments', learnCards, commentSection));
 
-planButton.addEventListener('click', ()=> showHideComments(planButton, 'View plans', 'Hide plans', planCards, planContainer))
+planButton.addEventListener('click', ()=>{
+    showHideComments(planButton, 'View plans', 'Hide plans', planCards, planContainer)
+    
+} 
+
+)
 
 
 buttonMenu.addEventListener('click', ()=>{

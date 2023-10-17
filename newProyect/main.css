@@ -1497,6 +1497,158 @@ body{
   color: var(--textBlack);
 } */
 
+/*Footer*/
+
+footer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+.footer__up {
+  width: 85%;
+  margin: 0 auto;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__up--left p span{
+  color: var(--orangeTitle);
+}
+
+.footer__up--left p {
+  color: var(--textBlack);
+  font-weight: var(--medium);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  
+}
+
+.footer__up--right ul{
+  display: flex;
+  list-style: none;
+}
+
+.footer__up--right ul li{
+  margin-right: 4px;
+  color: var(--textBlack);
+  font-weight: var(--medium);
+  font-size: 1rem;
+  cursor: pointer;
+  
+}
+
+.footer__up--right ul li::after{
+  content: " | ";
+  color: var(--orangeTitle);
+}
+
+.footer__up--input {
+  height: 32px; 
+  border: 1px solid #ccc;
+  border-radius: 8px; 
+  padding: 12px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out; 
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+  width: 324px;
+  display: none;
+  
+}
+
+.footer__up--input:focus {
+  box-shadow: 0 0 0 1px var(--orangeTitle);
+  outline: none;
+  
+}
+
+.footer__up--button{
+  height: 32px;
+  border-radius: 8px;
+  border:none ;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 0 16px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  background-color: var(--orangeTitle);
+  color: var(--textBlack);
+  cursor: pointer; 
+  opacity: 0;
+  animation-name: opacitySign;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+  
+}
+
+@keyframes opacitySign{
+  from{
+    opacity: 0;
+
+  }
+
+  to{
+    opacity: 0.5;
+
+  }
+}
+
+.footer__up--button:hover{
+  opacity: 1 !important; 
+}
+
+
+
+
+.footer__down {
+  background-color: var(--backgroundBlack);
+  padding: 12px 0 16px;
+  opacity: 0.97;
+}
+
+.footer__down--content{
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+
+}
+
+.footer__down--left{
+  border-top:1px solid var(--orangeTitle) ;
+  width: 18%;
+}
+
+.footer__down--center p{
+  color: var(--textWhite);
+  font-size: 1rem;
+  font-weight: var(--Regular);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.footer__down--center p span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url('../Assets/icons/heartfooter.svg') no-repeat center/contain;
+}
+
+.footer__down--right{
+  border-top:1px solid var(--textWhite) ;
+  width: 18%;
+}
+
+
 
 
 

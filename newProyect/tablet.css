@@ -40,26 +40,28 @@
     }
 }
 
- .nav__list li{
+ .nav__list li a{
+    text-decoration: none;
     font-size: 1.2rem;
     padding-right: 4px;
     font-weight: 300;
     letter-spacing: 1.3px;
     cursor: pointer;
+    color: var(--textBlack);
 } 
 
-.nav__list li::before{
+.nav__list li a::before{
     content: " | ";
     color: var(--orangeTitle);
 }
 
-.nav__list li:hover::before{
-    color: var(--textWhite);
+.nav__list li a:hover::before{
+    color: var(--textBlack);
 }
 
 
 
-.nav__list li:hover{
+.nav__list li a:hover{
     color: var(--orangeTitle);
 }
 .account, .shopping__cart{
@@ -189,6 +191,12 @@
  .plans__content{
   grid-template-columns: repeat(2,1fr);
 }
+
+/*Footer*/
+
+
+
+
 
 
 
