@@ -15,6 +15,10 @@ const planContainer = d.querySelector('.plans__cards')
 const planCards = d.querySelectorAll('.plans__card')
 const footerInput = d.querySelector('.footer__up--input')
 const footerBtn = d.querySelector('.footer__up--button')
+const navIcon = d.querySelector('.nav__icon')
+const menuMobile = d.querySelector('.menu__mobile')
+const shadow = d.querySelector('.shadow')
+const menuCloseIcon = d.querySelector('.menu__mobile--icon')
 /* const navButton = d.getElementsByClassName('valuesButton')[0]
 const loveContainer = d.querySelector('.love__container')
 
@@ -30,6 +34,27 @@ navButton.addEventListener('click', ()=>{
    
 
 }) */
+
+menuCloseIcon.addEventListener('click', ()=>{
+    menuMobile.style.animation = 'moveOut 1s 0s ease-in-out forwards' 
+    shadow.classList.add('inactive') 
+})
+
+
+shadow.addEventListener('click', ()=>{
+
+    if(!menuMobile.classList.contains('inactive')){
+        menuMobile.style.animation = 'moveOut 1s 0s ease-in-out forwards' 
+        shadow.classList.add('inactive') 
+    }
+})
+
+navIcon.addEventListener('click', ()=>{
+        menuMobile.style.animation = 'moveIn 1s 0s ease-in-out forwards' 
+        shadow.classList.remove('inactive') 
+        menuMobile.classList.remove('inactive') 
+})
+
 
 footerInput.addEventListener('input', ()=>{
     

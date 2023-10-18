@@ -131,6 +131,9 @@
   font-size: 1.6rem;
 } 
 
+
+
+
 /*Plans content*/
 
 
@@ -158,11 +161,19 @@
   font-size: 1.5rem;
 } 
 
+
+
 @media(min-width: 1700px){
   .plans__pocket , .plans__info{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     place-items: center;
+  }
+
+  .plans__cards{
+    justify-content: center;
+    width: 50%;
+    gap: 16px;
   }
 
   .plans__pocket--icon , .plans__info--icon{
@@ -182,11 +193,7 @@
     background-image: url('../Assets/img/budgetTwo.png');
   }
 
-  .plans__cards{
-    justify-content: center;
-    width: 50%;
-    gap: 16px;
-  }
+  
   
   .plans__card{
     width: 100%;
