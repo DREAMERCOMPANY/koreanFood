@@ -57,4 +57,4 @@ This project is open-source and released under the MIT License.
 
 ## Author
 
-This project was created by **Jhon Ramirez** As an educational exercise.
+This project was created by **Jhon Ramirez**.
