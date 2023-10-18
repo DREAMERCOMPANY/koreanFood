@@ -154,7 +154,7 @@ const recipies = []
 console.log(recipies)
 recipies.push(
     {
-        img: '../Assets/img/recipeone.png',
+        img: './Assets/img/recipeone.png',
         subtitle: 'Delicious Korean stir-fry.',
         title : 'JAPCHAE',
         description : 'Sweet and savory Korean dish of beef, vegetables, and glass noodles stir-fried to perfection.',
@@ -162,7 +162,7 @@ recipies.push(
 
     },
     {
-        img: '../Assets/img/recipetwo.png',
+        img: './Assets/img/recipetwo.png',
         subtitle: 'Colorful Korean bowl',
         title : 'BIMBIMBAP',
         description : 'Colorful Korean rice dish with assorted veggies, meat, and a spicy sauce; a true delight.',
@@ -170,28 +170,28 @@ recipies.push(
 
     },
     {
-        img: '../Assets/img/recipethree.png',
+        img: './Assets/img/recipethree.png',
         subtitle: 'Spicy Korean staple.',
         title : 'KIMCHI',
         description : 'Spicy, fermented cabbage with a tangy kick; a staple side dish in Korean cuisine.',
         buttonText: '$600 - ADD'
     },
     {
-        img: '../Assets/img/recipefour.png',
+        img: './Assets/img/recipefour.png',
         subtitle: 'Tasty Korean grill.',
         title : 'DALGALBI',
         description : 'Spicy stir-fried chicken dish with vegetables; bursting with flavors and a popular choice.',
         buttonText: '$800 - ADD'
     },
     {
-        img: '../Assets/img/recipefive.png',
+        img: './Assets/img/recipefive.png',
         subtitle: 'Savory Korean barbecue.',
         title : 'BULGOGI',
         description : 'Thinly sliced beef marinated in a flavorful sauce, grilled to tender perfection; a must-try BBQ dish.',
         buttonText: '$215 - ADD'
     },
     {
-        img: '../Assets/img/recipesix.png',
+        img: './Assets/img/recipesix.png',
         subtitle: 'Korean grilled ribs.',
         title : 'GALBI',
         description : 'Grilled beef short ribs marinated in a mouthwatering sauce; an absolute favorite at Korean BBQ.',
