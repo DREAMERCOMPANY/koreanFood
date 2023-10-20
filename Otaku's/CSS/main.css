@@ -184,8 +184,6 @@ body{
   opacity: 0;
 }
 
-
-
 .menu{
   width: 90%;
   padding: 0 22px;
@@ -199,8 +197,6 @@ body{
 .padding__menu{
   padding: 16px;
 }
-
-
 
 .menu__shadow{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -238,8 +234,6 @@ body{
   gap: 8px;
 }
 
-
-
 .menu__home--list li , .menu__article--list li , .menu__food--list li, .menu__comment--list li{
   font-size: 1.3rem;
   color: var(--textBlack);
@@ -257,9 +251,6 @@ body{
   transform: rotate(-90deg);
   background: url('../Assets/icons/arrowDown.png') center/cover no-repeat;
 }
-
-
-
 
 .menu__actions{
   display: grid;
@@ -371,10 +362,6 @@ body{
 }
 
 
-
-
-
-
 .discover{
   z-index: 0;
   background-position: center;
@@ -445,10 +432,6 @@ body{
 .recipe-6{
   animation-delay: 2.2s;
 }
-
-
-
-
 
 .recipies__cards--hero{
   background-color: var(--backgroundBlack);
@@ -552,21 +535,12 @@ body{
   }
 
   
-
-  
-  
-
-  
-
-
 .nav{
     width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding: 8px 0;
-    
-    
 }
 
 .nav__list{

@@ -115,16 +115,9 @@ navButton.addEventListener('click', ()=>{
 
 
 menuHome.addEventListener('click',()=> showHideMenu(homeMenu,homeList,homeItems, iconArrowHome) )
-
 menuArticle.addEventListener('click', ()=> showHideMenu(homeMenuArticle, homeListArticle,homeItemsArticle,iconArrowArticle))
-
 menuFood.addEventListener('click', ()=> showHideMenu(homeMenuFood, homeListFood,homeItemsFood, iconArrowFood))
-
 menuComment.addEventListener('click', ()=> showHideMenu(homeMenuComment, homeListComment,homeItemsComment,iconArrowComment)) 
-
-
-
-
 
 menuCloseIcon.addEventListener('click', ()=>{
     menuMobile.style.animation = 'moveOut 1s 0s ease-in-out forwards' 

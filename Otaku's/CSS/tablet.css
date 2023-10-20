@@ -64,7 +64,7 @@
 .nav__list li a:hover{
     color: var(--orangeTitle);
 }
-.account, .shopping__cart{
+ .shopping__cart{
     background: url('../Assets/img/backGroundBlackDesktop.png') center/cover no-repeat;
     margin-left: 16px;
     cursor: pointer;
@@ -74,9 +74,7 @@
     border-radius: 50%;
 }
 
-.account{
-    background-image: url('../Assets/img/dogProfile.jpg'); 
-}
+
 
 .shopping__cart{
     background-image: url('../Assets/img/shoppingCartIcon.jpg');
