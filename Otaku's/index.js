@@ -19,6 +19,32 @@ const navIcon = d.querySelector('.nav__icon')
 const menuMobile = d.querySelector('.menu__mobile')
 const shadow = d.querySelector('.shadow')
 const menuCloseIcon = d.querySelector('.menu__mobile--icon')
+
+const menuHome = d.querySelector('#home__action') //icon
+const homeMenu = d.querySelector('#home') //section
+const homeList = d.querySelector('.menu__home--list') //list
+const homeItems = d.querySelectorAll('.listItem') //arr
+const iconArrowHome = d.querySelector('.arrowHome')
+
+const menuArticle = d.querySelector('#article__action') //icon
+const homeMenuArticle = d.querySelector('#article') //section
+const homeListArticle = d.querySelector('.menu__article--list') //list
+const homeItemsArticle = d.querySelectorAll('.listItemArticle') //arr
+const iconArrowArticle = d.querySelector('.arrowArticle')
+
+const menuFood = d.querySelector('#food__action') //icon
+const homeMenuFood = d.querySelector('#food') //section
+const homeListFood = d.querySelector('.menu__food--list') //list
+const homeItemsFood = d.querySelectorAll('.listItemFood') //arr
+const iconArrowFood = d.querySelector('.arrowFood')
+
+const menuComment = d.querySelector('#comment__action') //icon
+const homeMenuComment = d.querySelector('#comment') //section
+const homeListComment = d.querySelector('.menu__comment--list') //list
+const homeItemsComment = d.querySelectorAll('.listItemComment') //arr
+const iconArrowComment = d.querySelector('.arrowComment')
+
+
 /* const navButton = d.getElementsByClassName('valuesButton')[0]
 const loveContainer = d.querySelector('.love__container')
 
@@ -34,6 +60,71 @@ navButton.addEventListener('click', ()=>{
    
 
 }) */
+
+
+
+ function showHideMenu(section, list , arr, arrow){
+
+    arrow.classList.toggle('rotateIcon')
+    section.classList.add('padding__menu')
+    
+    if(!section.classList.contains('menu__shadow')){
+        section.classList.add('menu__shadow')
+        list.classList.remove('inactive')
+
+        for(let i =0; i<arr.length;i++){
+            const delay = i * 0.4
+            arr[i].style.opacity = 0
+            arr[i].style.animation= `fadeIn 0.5s ease-in-out ${delay}s forwards`
+        } 
+
+        console.log('Added Shadow')
+        return;
+    }
+
+
+
+    if(section.classList.contains('menu__shadow')){
+
+        let animationCompleted = 0
+
+        for(let i = arr.length-1; i>=0; i--){
+            const delay = (arr.length - i - 1) * 0.15;
+    
+                arr[i].style.opacity = 1;
+                arr[i].style.animation = `fadeOut 0.3s ease-in-out  forwards ${delay}s` 
+
+                arr[i].addEventListener('animationend', ()=>{
+                    animationCompleted++
+                    console.log(animationCompleted)
+
+                    if(animationCompleted === arr.length){
+                        section.classList.remove('menu__shadow')
+                        list.classList.add('inactive')
+                        section.classList.remove('padding__menu')
+                    }
+                })     
+        }
+        
+        console.log('Removed Shadow')
+        return;
+
+    }
+
+}
+
+
+menuHome.addEventListener('click',()=> showHideMenu(homeMenu,homeList,homeItems, iconArrowHome) )
+
+menuArticle.addEventListener('click', ()=> showHideMenu(homeMenuArticle, homeListArticle,homeItemsArticle,iconArrowArticle))
+
+menuFood.addEventListener('click', ()=> showHideMenu(homeMenuFood, homeListFood,homeItemsFood, iconArrowFood))
+
+menuComment.addEventListener('click', ()=> showHideMenu(homeMenuComment, homeListComment,homeItemsComment,iconArrowComment)) 
+
+
+
+
 
 menuCloseIcon.addEventListener('click', ()=>{
     menuMobile.style.animation = 'moveOut 1s 0s ease-in-out forwards' 

@@ -137,12 +137,9 @@ body{
 /*Menu mobile*/
 
 .menu__mobile{
+  padding: 12px 8px 20px 8px;
   width: 70vw;
-  height: 100vh;
-  background-image: url('../Assets/img/backGroundWhite.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #f2f2f2;
   position: absolute;
   z-index: 2;
   right: 0;
@@ -156,6 +153,7 @@ body{
 }
 
 .menu__mobile--icon{
+  
   display: flex;
   width: 22px;
   height: 22px;
@@ -182,47 +180,84 @@ body{
   font-size: 1.2rem;
 }
 
-
-
-.menu__mobile ul{
-  list-style: none;
+.listItem, .listItemArticle, .listItemFood, .listItemComment{
+  opacity: 0;
 }
 
-.menu__mobile .menu__items{
-  width: 60%;
+
+
+.menu{
+  width: 90%;
+  padding: 0 22px;
+  margin: 0 auto;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column; 
+  margin-bottom: 8px;
+}
+
+.padding__menu{
+  padding: 16px;
+}
+
+
+
+.menu__shadow{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+
+}
+
+.rotateIcon{
+  transform: rotate(360deg) !important;
+}
+
+.menu__home{
+  font-size: 1.6rem;
+  color: var(--textBlack);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.menu__home span{
+  opacity: 0.8;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url('../Assets/icons/arrowDown.png') center/cover no-repeat;
+  transform: rotate(180deg);
+  
+}
+
+.menu__home--list,.menu__article--list, .menu__food--list,.menu__comment--list {
+  list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin: 20px auto;
+  gap: 8px;
 }
 
-.menu__mobile .menu__items li {
-  font-family: inherit;
-  font-size: 1.4rem;
+
+
+.menu__home--list li , .menu__article--list li , .menu__food--list li, .menu__comment--list li{
+  font-size: 1.3rem;
+  color: var(--textBlack);
   display: flex;
-  letter-spacing: 0.2rem;
   justify-content: space-between;
-  background-color: var(--backgroundButtons);
-  padding: 10px;
-  border-radius: 15px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Box shadow */
-  opacity: 0.5;
+  width: 95%;
+  margin: 0 auto
 }
 
-.menu__mobile .menu__items li:hover{
+.menu__home--list li span, .menu__article--list li span , .menu__food--list li span, .menu__comment--list li span{
   opacity: 0.8;
-  background-color: var(--backgroundBlack);
-  color: var(--textWhite);
-  transform: scale(0.9);
-  justify-content: space-around;
-  
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  transform: rotate(-90deg);
+  background: url('../Assets/icons/arrowDown.png') center/cover no-repeat;
 }
 
-.menu__mobile .menu__items li:hover span::after{
-  content: '>';
-  opacity: 0.6;
-  
-}
 
 
 
