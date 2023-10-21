@@ -363,6 +363,7 @@ body{
 
 
 .discover{
+  
   z-index: 0;
   background-position: center;
   background-repeat: no-repeat;
@@ -1840,8 +1841,208 @@ footer{
   width: 18%;
 }
 
+.login__content{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  display: grid;
+  place-items: center;
+}
+
+.login__item{
+  z-index: 1;
+  width: 70vw;
+  height: 70vh;
+  background-color: var(--backgroundBlack);
+  border-radius: 8px;
+  animation-name: loginOpacityIn;
+  animation-name: loginOpacityOut;
+  padding: 40px 16px 28px 16px;
+}
+
+@keyframes loginOpacityIn{
+  from{
+    opacity: 0;
+    transform: scale(0.9);
+
+  }
+
+  to{
+    opacity: 1;
+    transform: scale(1);
+
+  }
+}
+
+@keyframes loginOpacityOut{
+  from{
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to{
+    opacity: 0;
+    transform: scale(0.9);
+
+  }
+}
+
+.login__item .login__item--title{
+  font-size: 1.6rem;
+  color: var(--textWhite);
+  letter-spacing: 0.1rem;
+  margin-bottom: 16px;
+}
+
+.login__item--data{
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login__item--data .login__username, .login__password{
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid var(--orangeTitle);
+  opacity: 0.6;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  align-items: center;
+}
+
+.activeInput{
+  opacity: 1;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
+}
+
+.login__item--data .login__username span, .login__password span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  opacity: 0;
+  animation-name: opacityInputIcon;
+}
+
+@keyframes opacityInputIcon{
+  from{
+    opacity: 0;
+
+  }
+
+  to{
+    opacity: 1;
+
+  }
+}
+
+.login__item--data .login__username input, .login__password input{
+  outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 0 8px;
+    color: var(--textWhite);
+}
 
 
+
+.login__forgot{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.login__forgot input:nth-child(1){
+  outline: none;
+  border: 1px solid var(--white);
+  color: var(--white);
+
+}
+
+.login__forgot p:nth-child(2){
+  font-size: 1.2rem;
+  color: var(--textWhite);
+  opacity: 0.8;
+  
+}
+
+.login__forgot p:nth-child(3){
+  font-size: 1.2rem;
+  color: var(--orangeTitle);
+  opacity: 0.8;
+  
+}
+
+.login__button button {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1.4rem;
+  color: var(--textWhite);
+  letter-spacing: 0.1rem;
+  border-radius: 80px;
+  outline: none;
+  background: var(--orangeTitle);
+  border: none;
+  font-family: inherit;
+  opacity: 0.6;
+   }
+
+   .login__button button:hover{
+    opacity: 1;
+   }
+
+.login__item--network{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.login__item--network__title{
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--textWhite);
+}
+
+
+.login__item--network__social{
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.login__item--network__social span{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: green;
+}
+
+
+.login__item--network__forgot{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.login__item--network__forgot p:first-child{
+  color: var(--textWhite);
+  font-size: 1.2rem;
+
+}
+
+.login__item--network__forgot p:last-child{
+  color: var(--orangeTitle);
+  font-size: 1.2rem;
+
+  
+}
 
 
 

@@ -44,6 +44,74 @@ const homeListComment = d.querySelector('.menu__comment--list') //list
 const homeItemsComment = d.querySelectorAll('.listItemComment') //arr
 const iconArrowComment = d.querySelector('.arrowComment')
 
+/*Login button*/ 
+
+const loginBtn = d.querySelector('#loginButton')
+const loginContent = d.querySelector('.login__content')
+const loginItem = d.querySelector('.login__item')
+
+/*Inputs Effects*/
+
+const inputUsername = d.querySelector('#inputOne')
+const inputPswd = d.querySelector('#inputTwo')
+const loginInput = d.querySelector('.login__username')
+const loginPswd = d.querySelector('.login__password')
+const iconUsername = d.querySelector('#iconUsername')
+const iconPwdOne = d.querySelector('#iconPasswordOne')
+const iconPwdTwo = d.querySelector('#iconPasswordTwo')
+
+console.log(iconUsername)
+
+/*For login input Username*/
+
+inputUsername.addEventListener('focus',()=>{
+    loginInput.classList.add('activeInput')
+    iconUsername.style.animation = 'opacityInputIcon 1s ease-in-out 0.5s forwards'
+})
+
+
+inputUsername.addEventListener('blur',()=>{
+    
+
+    setTimeout(()=>{
+        loginInput.classList.remove('activeInput')
+    }, 150)
+
+    
+})
+
+/*For login input Password*/
+
+
+inputPswd.addEventListener('focus',()=>{
+    loginPswd.classList.add('activeInput')
+    iconPwdOne.style.animation = 'opacityInputIcon 1s ease-in-out 0.5s forwards'
+    iconPwdTwo.style.animation = 'opacityInputIcon 1s ease-in-out 0.5s forwards'
+})
+
+
+inputPswd.addEventListener('blur',()=>{
+
+    setTimeout(()=>{
+        loginPswd.classList.remove('activeInput')
+    }, 150)
+    
+})
+
+
+
+
+loginBtn.addEventListener('click', ()=>{
+
+        menuMobile.classList.add('inactive')
+        loginContent.classList.remove('inactive')
+        loginItem.style.opacity = 0
+        loginItem.style.animation = 'loginOpacityIn 0.5s ease-in-out 0.2s forwards'
+        discoverSection.style.overflowY = 'hidden'
+        discoverSection.style.height = '100vh'
+    
+})
+
 
 /* const navButton = d.getElementsByClassName('valuesButton')[0]
 const loveContainer = d.querySelector('.love__container')
@@ -128,8 +196,22 @@ menuCloseIcon.addEventListener('click', ()=>{
 shadow.addEventListener('click', ()=>{
 
     if(!menuMobile.classList.contains('inactive')){
-        menuMobile.style.animation = 'moveOut 1s 0s ease-in-out forwards' 
+        menuMobile.style.animation = 'moveOut 1s 0s ease-in-out forwards'  
+    }
+
+    if(!loginContent.classList.contains('inactive')){
+        //loginContent.classList.add('inactive')
+        loginItem.style.opacity = 1
+        loginItem.style.animation = 'loginOpacityOut 0.4s ease-in-out 0s forwards'
+
+         setTimeout(()=>{
+            loginContent.classList.add('inactive')
+         }, 1000)
+    
         shadow.classList.add('inactive') 
+
+        discoverSection.style.overflowY = 'visible'
+        discoverSection.style.height = 'auto'
     }
 })
 
