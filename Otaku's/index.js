@@ -227,17 +227,19 @@ shadow.addEventListener('click', ()=>{
             loginContent.classList.add('inactive')
          }, 1000)
     
-        shadow.classList.add('inactive') 
+        
 
         discoverSection.style.overflowY = 'visible'
         discoverSection.style.height = 'auto'
+        
     }
 
+    shadow.classList.add('inactive') 
+    inputUsername.value = ''
+    inputPswd.value = ''
     iconUsername.style.animation = 'none'
     iconPwdOne.style.animation = 'none'
     iconPwdTwo.style.animation = 'none'
-
-
 })
 
 navIcon.addEventListener('click', ()=>{
