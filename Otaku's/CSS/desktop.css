@@ -170,11 +170,13 @@
     place-items: center;
   }
 
-  .plans__cards{
+   .plans__cards{
     justify-content: center;
     width: 50%;
     gap: 16px;
-  }
+    overflow-x: hidden; 
+    padding: 14px;
+  } 
 
   .plans__pocket--icon , .plans__info--icon{
     display: inline-block;
@@ -257,6 +259,14 @@
     width: 30%;
   }
 }
+
+
+/*Scroll*/
+
+
+
+
+
 
 
 
