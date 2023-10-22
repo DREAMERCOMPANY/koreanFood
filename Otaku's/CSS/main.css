@@ -1842,7 +1842,7 @@ footer{
   width: 18%;
 }
 
-.login__content{
+.login__content, .subscripe__content{
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -1851,7 +1851,7 @@ footer{
   place-items: center;
 }
 
-.login__item{
+.login__item, .subscribe__item{
   z-index: 1;
   width: 70vw;
   height: 85vh;
@@ -1984,21 +1984,47 @@ footer{
 
 .login__forgot{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 4px;
   margin-bottom: 20px;
-  width: 90%;
-  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
 }
+
+.login__forgot--remember{
+  display: flex;
+  gap: 8px;
+}
+
+
 
 .login__privacy{
   display: flex;
   width: 90%;
   margin: 0 auto;
-  gap: 12px;
+  gap: 16px;
 }
+
+.login__privacy--text p{
+  opacity: 0.5;
+}
+
+.login__privacy input[type='checkbox']:checked + .login__privacy--text p {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.login__privacy input[type='checkbox']:checked + .login__privacy--text p span {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+
 
 .login__privacy p{
   color: var(--textWhite);
+  font-size: 1.2rem;
 
 }
 
@@ -2008,35 +2034,69 @@ footer{
 }
 
 .login__forgot input:nth-child(1), .login__privacy input:nth-child(1){
-  outline: none;
-  border: 1px solid var(--white);
-  color: var(--white);
-
+  border-radius: 20%;
+    background: var(--orangeTitle);
+    width: 16px;
+    height: 16px;
+    appearance: initial;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.login__forgot p:nth-child(2) {
+.login__forgot input:nth-child(1):checked, .login__privacy input:nth-child(1):checked{
+  opacity: 1;
   font-size: 1.2rem;
+  font-weight: bolder;
   color: var(--textWhite);
-  opacity: 0.8;
-  position:relative;
-  left: -23px;
-  letter-spacing: 0.1rem;
+}
+
+.login__privacy input:nth-child(1):checked::after,.login__forgot input:nth-child(1):checked::after{
+  content: '√';
   
 }
+
+.login__forgot--remember input[type="checkbox"]:checked + p {
+  opacity: 1;
+  letter-spacing: 0.1rem;
+}
+
+.login__forgot .loginForgot__pswd{
+  font-size: 1.2rem;
+  color: var(--orangeTitle);
+  opacity: 0.6;
+}
+
+
+
+.login__forgot .loginForgot__pswd:hover{
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.login__forgot--remember p:last-child{
+  font-size: 1.2rem;
+  color: var(--textWhite);
+  opacity: 0.6;
+
+}
+
+
 
  .login__privacy p:nth-child(2){
   font-size: 1.2rem;
   color: var(--textWhite);
   opacity: 0.8;
-  letter-spacing: 0.1rem;
+  
 
  }
 
 .login__forgot p:nth-child(3){
   font-size: 1.2rem;
   color: var(--orangeTitle);
-  opacity: 0.8;
-  letter-spacing: 0.1rem;
+  opacity: 0.6;
   
 }
 
@@ -2063,12 +2123,11 @@ footer{
    }
 
 .login__item--network{
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding-top: 60px;
+  padding-top: 20px;
 }
 .login__item--network__title{
   text-align: center;
@@ -2118,36 +2177,40 @@ footer{
 }
 .login__item--network__forgot{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
+  gap: 12px;
 }
 
 .login__item--network__forgot p:first-child{
   color: var(--textWhite);
-  font-size: 1.2rem;
+  font-size: 1rem;
   opacity: 0.6;
 
 }
 
 .login__item--network__forgot p:first-child:hover{
   opacity: 1;
+  transform: scale(1.1);
 }
 
 
 .login__item--network__forgot p:last-child{
   color: var(--orangeTitle);
-  font-size: 1.2rem;
+  font-size: 1rem;
   opacity: 0.6; 
+  text-align: center;
 }
 
 .login__item--network__forgot p:last-child:hover{
   opacity: 1;
+  transform: scale(1.1);
 }
 
 .signContent{
-  width: 70%;
-  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
   display: flex;
   gap: 12px;
   position: relative;
@@ -2155,13 +2218,13 @@ footer{
 }
 
 .signContent p:first-child,.signContent p:last-child{
-  font-size: 1.2rem;
+  font-size: 1rem;
   opacity: 0.6;
 }
 
 .signContent p:first-child:hover,.signContent p:last-child:hover{
   opacity: 1;
-
+  transform: scale(1.1);
 }
 
 .signContent p:first-child{

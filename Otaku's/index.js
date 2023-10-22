@@ -57,6 +57,23 @@ const loginItemTitle = d.querySelector('.login__item--title')
 const usernameInput = d.querySelector('.login__username')
 const pswdInput = d.querySelector('.login__password')
 
+/*Subscripe Btn*/
+
+const subscripeContent = d.querySelector('.subscripe__content')
+const subscripeItem = d.querySelector('.subscribe__item')
+const subscribeBtn = d.querySelector('#subscripeButton')
+console.log(subscripeItem)
+
+subscribeBtn.addEventListener('click', ()=>{
+    menuMobile.classList.add('inactive')
+    shadow.classList.remove('inactive')
+    subscripeContent.classList.remove('inactive')
+    subscripeItem.style.opacity = 0
+    subscripeItem.style.animation = 'loginOpacityIn 0.5s ease-in-out 0.2s forwards'
+    discoverSection.style.overflowY = 'hidden'
+    discoverSection.style.height = '100vh'
+})
+
 signBtn.addEventListener('click',()=>{
     menuMobile.classList.add('inactive')
         loginContent.classList.remove('inactive')
@@ -439,6 +456,9 @@ shadow.addEventListener('click', ()=>{
     const nameContainer = d.querySelector('.name__container')
     const confirmPswd = d.querySelector('.login__confirmPassword')
     const emailContent = d.querySelector('.login__email')
+    
+
+    console.log(loginInput)
 
     const terms = d.querySelector('.login__privacy')
     terms.classList.add('inactive')
@@ -448,6 +468,8 @@ shadow.addEventListener('click', ()=>{
     }
 
     if(!loginContent.classList.contains('inactive')){
+        const loginInput = d.querySelector('#inputOne')
+         const loginPswd = d.querySelector('#inputTwo')
         //loginContent.classList.add('inactive')
         loginItem.style.opacity = 1
         loginItem.style.animation = 'loginOpacityOut 0.4s ease-in-out 0s forwards'
@@ -460,18 +482,35 @@ shadow.addEventListener('click', ()=>{
 
         discoverSection.style.overflowY = 'visible'
         discoverSection.style.height = 'auto'
- 
+        shadow.classList.add('inactive')
+        nameContainer.classList.add('inactive')
+        confirmPswd.classList.add('inactive')
+        emailContent.classList.add('inactive')
+        iconPwdOne.style.animation = 'none'
+        iconPwdTwo.style.animation = 'none'
+        iconUsername.style.animation = 'none'
+        loginInput.value = ''
+        loginPswd.value = ''
+        return;
     }
 
+    
     shadow.classList.add('inactive') 
-    inputUsername.value = ''
-    inputPswd.value = ''
-    iconUsername.style.animation = 'none'
-    iconPwdOne.style.animation = 'none'
-    iconPwdTwo.style.animation = 'none'
-    nameContainer.classList.add('inactive')
-    confirmPswd.classList.add('inactive')
-    emailContent.classList.add('inactive')
+    
+     if(!subscripeContent.classList.contains('inactive')){
+        //loginContent.classList.add('inactive')
+        subscripeItem.style.opacity = 1
+        subscripeItem.style.animation = 'loginOpacityOut 0.4s ease-in-out 0s forwards'
+
+         setTimeout(()=>{
+            subscripeContent.classList.add('inactive')
+         }, 800)
+    
+        discoverSection.style.overflowY = 'visible'
+        discoverSection.style.height = 'auto'
+        shadow.classList.add('inactive')
+        return;
+    } 
 })
 
 navIcon.addEventListener('click', ()=>{
