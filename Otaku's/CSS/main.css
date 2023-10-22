@@ -464,6 +464,7 @@ body{
   position: absolute;
   left: 12px;
   top: 12px;
+  transform: scale(1);
 
 }
 
@@ -1902,7 +1903,7 @@ footer{
   gap: 20px;
 }
 
-.login__item--data .login__username, .login__password{
+.login__item--data .login__username, .login__password, .login__name, .login__lastName, .login__confirmPassword, .login__email{
   width: 100%;
   border-radius: 18px;
   border: 1px solid var(--orangeTitle);
@@ -1918,6 +1919,13 @@ footer{
   box-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
 }
 
+.name__container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 8px;
+  width: 100%;
+}
+
 
 
 .login__username span:nth-child(1){
@@ -1930,7 +1938,7 @@ footer{
   
 }
 
-.login__password span:nth-child(3){
+.spanIconText{
   color: var(--textWhite);
   cursor: pointer;
   opacity: 0;
@@ -1939,7 +1947,7 @@ footer{
   align-items: center;
 }
 
-.login__item--data .login__username span, .login__password span {
+.spanIcon {
   display: inline-block;
   opacity: 0;
   animation-name: opacityInputIcon;
@@ -1962,7 +1970,7 @@ footer{
   }
 }
 
-.login__item--data .login__username input, .login__password input{
+.inputContent{
   outline: none;
     border: none;
     background-color: transparent;
@@ -1982,14 +1990,31 @@ footer{
   margin: 0 auto;
 }
 
-.login__forgot input:nth-child(1){
+.login__privacy{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  gap: 12px;
+}
+
+.login__privacy p{
+  color: var(--textWhite);
+
+}
+
+.login__privacy p span{
+  color: var(--orangeTitle);
+
+}
+
+.login__forgot input:nth-child(1), .login__privacy input:nth-child(1){
   outline: none;
   border: 1px solid var(--white);
   color: var(--white);
 
 }
 
-.login__forgot p:nth-child(2){
+.login__forgot p:nth-child(2) {
   font-size: 1.2rem;
   color: var(--textWhite);
   opacity: 0.8;
@@ -1998,6 +2023,14 @@ footer{
   letter-spacing: 0.1rem;
   
 }
+
+ .login__privacy p:nth-child(2){
+  font-size: 1.2rem;
+  color: var(--textWhite);
+  opacity: 0.8;
+  letter-spacing: 0.1rem;
+
+ }
 
 .login__forgot p:nth-child(3){
   font-size: 1.2rem;
@@ -2110,6 +2143,35 @@ footer{
 
 .login__item--network__forgot p:last-child:hover{
   opacity: 1;
+}
+
+.signContent{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  gap: 12px;
+  position: relative;
+  top: 24px;
+}
+
+.signContent p:first-child,.signContent p:last-child{
+  font-size: 1.2rem;
+  opacity: 0.6;
+}
+
+.signContent p:first-child:hover,.signContent p:last-child:hover{
+  opacity: 1;
+
+}
+
+.signContent p:first-child{
+  color: var(--textWhite);
+
+}
+
+.signContent p:last-child{
+  color: var(--orangeTitle);
+  
 }
 
 

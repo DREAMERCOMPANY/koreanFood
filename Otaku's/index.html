@@ -86,21 +86,31 @@
                 <h2 class="login__item--title">Log In</h2>
                 <article class="login__item--data" >
                     <div class="login__username">
-                        <span id="iconUsername"></span>
-                        <input type="text" placeholder="Username" id="inputOne">
+                        <span class="spanIcon"  id="iconUsername"></span>
+                        <input class="inputContent" type="text" placeholder="Username" id="inputOne">
                     </div>
                     <div class="login__password">
-                        <span id="iconPasswordOne"></span>
-                        <input type="password" placeholder="Password" id="inputTwo">
-                        <span id="iconPasswordTwo">Show</span>
+                        <span class="spanIcon" id="iconPasswordOne"></span>
+                        <input class="inputContent" type="password" placeholder="Password" id="inputTwo">
+                        <span class="spanIconText"  id="iconPasswordTwo">Show</span>
                     </div>
                     <div class="login__forgot">
                         <input type="checkbox">
                         <p>Remember me</p>
                         <p>Forgot Password</p>
                     </div>
+
+                    <div class="login__privacy inactive">
+                        <input type="checkbox">
+                        <p>I Agree with <span>privacy</span> and <span>policy</span></p>
+                    </div>
                     <div class="login__button">
-                        <button>Log in</button>
+                        <button id="actionBtnLogin">Log in</button>
+                    </div>
+
+                    <div class="signContent inactive">
+                        <p>¿Already have an account?</p>
+                        <p>Sign in</p>
                     </div>
                     
                 </article>
