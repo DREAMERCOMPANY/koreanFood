@@ -72,12 +72,25 @@ inputUsername.addEventListener('focus',()=>{
 
 inputUsername.addEventListener('blur',()=>{
     
-
     setTimeout(()=>{
         loginInput.classList.remove('activeInput')
-    }, 150)
+    }, 150) 
 
-    
+     
+})
+
+iconPwdTwo.addEventListener('click', ()=>{
+    if(iconPwdTwo.innerText === 'Show'){
+        iconPwdTwo.innerText = 'Hide'
+        inputPswd.type ='text'
+        return;
+    } 
+
+    if(iconPwdTwo.innerText === 'Hide'){
+        iconPwdTwo.innerText = 'Show'
+        inputPswd.type ='password'
+        return;
+    } 
 })
 
 /*For login input Password*/
@@ -95,6 +108,12 @@ inputPswd.addEventListener('blur',()=>{
     setTimeout(()=>{
         loginPswd.classList.remove('activeInput')
     }, 150)
+
+    if(iconPwdTwo.innerText === 'Hide'){
+        iconPwdTwo.innerText = 'Show'
+        inputPswd.type ='password'
+        return;
+    }  
     
 })
 
@@ -213,6 +232,12 @@ shadow.addEventListener('click', ()=>{
         discoverSection.style.overflowY = 'visible'
         discoverSection.style.height = 'auto'
     }
+
+    iconUsername.style.animation = 'none'
+    iconPwdOne.style.animation = 'none'
+    iconPwdTwo.style.animation = 'none'
+
+
 })
 
 navIcon.addEventListener('click', ()=>{
