@@ -2237,6 +2237,135 @@ footer{
   
 }
 
+/*Subscribe*/
+
+.subscribe__item{
+  padding: 30px 16px 28px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe__item--title{
+  color: var(--textWhite);
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.subscribe__item--list{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  list-style: none;
+  opacity: 0.7;
+}
+
+
+
+.subscribe__item--list li{
+  color: var(--textWhite);
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.subscribe__item--list li>span{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--orangeTitle);
+  
+}
+
+.subscribe__item--cards{
+  width: 90%;
+  margin: 26px auto 36px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+.subscribe__item--card{
+  padding: 16px 12px;
+  border: 1px solid var(--orangeTitle);
+  border-radius: 12px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 85% 15%;
+  place-items: center;
+}
+
+.subscribe__item--card:hover{
+  box-shadow: 0 2px 4px #EA6300;
+
+}
+
+.subscribe__item--card-text{
+  width: 100%;
+}
+
+.subscribe__item--card-text p:first-child{
+  font-size: 1.5rem;
+  color: var(--textWhite);
+
+}
+
+.subscribe__item--card-text p:last-child{
+  font-size: 1.2rem;
+  color: var(--textWhite);
+}
+
+.subscribe__item--card-text p:last-child > span{
+  font-size: 1rem;
+  color: var(--textWhite);
+  opacity: 0.6;
+}
+
+
+.subscribe__item--card-circle{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--textWhite);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.subscribe__item--card-circle:hover{
+  background-color: var(--orangeTitle);
+  opacity: 0.8;
+  border: none;
+}
+
+.subscribe__item--btn{
+  width: 100%;
+}
+
+.subscribe__item--btn button{
+  width: inherit;
+  background-color: var(--orangeTitle);
+  border-radius: 26px;
+  font-family: inherit;
+  outline: none;
+  color: var(--textWhite);
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  padding: 10px 0;
+  border: none;
+  opacity: 0.6;
+}
+
+.subscribe__item--btn button:hover{
+  opacity: 1;
+}
+
 
 
   
