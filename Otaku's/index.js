@@ -64,6 +64,40 @@ const subscripeItem = d.querySelector('.subscribe__item')
 const subscribeBtn = d.querySelector('#subscripeButton')
 console.log(subscripeItem)
 
+/*Subscribe Cards*/
+
+ const subscribeCards = d.querySelectorAll('.subscribe__item--card')
+const subscripeCircle = d.querySelectorAll('.subscribe__item--card-circle')
+
+
+
+    for(let i =0 ; i< subscripeCircle.length; i++){
+
+        for(let i=0; i< subscribeCards.length;i++){
+            subscribeCards[i].addEventListener('mouseenter',()=>{
+                subscribeCards[i].style.transform = 'scale(1.1)'
+                subscripeCircle[i].style.background = '#EA6300'
+            })   
+    
+            subscribeCards[i].addEventListener('mouseout',()=>{
+                subscribeCards[i].style.transform = 'scale(1.03)'
+                subscripeCircle[i].style.background = 'none'
+                
+            })     
+        }
+
+       
+    } 
+
+   
+
+
+
+
+
+
+
+
 subscribeBtn.addEventListener('click', ()=>{
     menuMobile.classList.add('inactive')
     shadow.classList.remove('inactive')

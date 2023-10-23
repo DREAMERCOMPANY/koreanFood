@@ -2338,11 +2338,7 @@ footer{
   cursor: pointer;
 }
 
-.subscribe__item--card-circle:hover{
-  background-color: var(--orangeTitle);
-  opacity: 0.8;
-  border: none;
-}
+
 
 .subscribe__item--btn{
   width: 100%;
