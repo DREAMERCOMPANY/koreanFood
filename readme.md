@@ -34,9 +34,9 @@ Explore meticulously crafted meal options for breakfast, lunch, and dinner.
 ### 4. Subscription Plans
 Upgrade to **Pro** for unlimited recipes, expert insights, and exclusive perks:
 
-- 🥇 **Gold Plan:** $26.99/month (3-day trial)
-- 🥈 **Silver Plan:** $15.99/month (1-day trial)
-- 🥉 **Bronze Plan:** $8.99/month
+- 🥇 **Gold Plan:** $55.20/month  (3 days trial)
+- 🥈 **Silver Plan:** $20.37/month (1 day trial)
+- 🥉 **Bronze Plan:** Free
 
 ### 5. User Authentication
 Secure **Log In** and **Sign Up** with an intuitive user interface.
