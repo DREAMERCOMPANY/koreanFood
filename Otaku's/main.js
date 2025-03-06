@@ -86,7 +86,7 @@ function showHideMenu(menuItem) {
         if (animationsCompleted === items.length) {
           section.classList.remove('menu__shadow');
           list.classList.add('inactive');
-          section.classList remove('padding__menu');
+          section.classList.remove('padding__menu');
         }
       });
     }

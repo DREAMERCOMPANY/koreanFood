@@ -8,18 +8,6 @@ Otaku's Food is more than just a website—it's a gateway to the heart of Korean
 
 [👉 Explore the Project on GitHub](https://github.com/DREAMERCOMPANY/koreanFood.git)
 
-## 📂 Project Structure
-
-```
-📦 Otaku's Food
-├── 📄 index.html         # Main structure of the website
-├── 📂 CSS               # Styling for various screen sizes
-│    ├── main.css       # Base styles
-│    ├── tablet.css     # Styles for tablets (600px+)
-│    └── desktop.css    # Styles for desktops (920px+)
-├── 📄 index.js          # Interactive features
-└── 📄 README.md         # Project documentation
-```
 
 ## 🚀 Getting Started
 
